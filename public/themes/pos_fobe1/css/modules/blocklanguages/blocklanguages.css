@@ -1,0 +1,9 @@
+#languages-block-top { float: left; position: relative; padding: 15px 0; }
+#languages-block-top span.firstWord { display: none; }
+#languages-block-top:hover div.current { color: #90133b; }
+#languages-block-top div.current { font-weight: normal; padding: 0 15px; line-height: 1; color: white; text-shadow: none; cursor: pointer; font-size: 13px; text-transform: uppercase; border-right: 1px solid white; font-weight: 700; }
+#languages-block-top div.current:after { content: "\f107"; font-family: "FontAwesome"; font-size: 13px; line-height: 1; vertical-align: top; padding-left: 7px; }
+#languages-block-top ul { display: none; position: absolute; padding: 5px 0; top: 45px; left: 0; min-width: 157px; background: #fff; -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2); box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2); z-index: 2; }
+#languages-block-top ul li { color: #333333; line-height: 30px; font-size: 14px; }
+#languages-block-top ul li a, #languages-block-top ul li > span { padding: 0 15px; display: block; color: #333333; }
+#languages-block-top ul li.selected, #languages-block-top ul li:hover a { color: #90133b; }

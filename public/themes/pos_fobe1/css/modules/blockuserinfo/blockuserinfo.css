@@ -1,0 +1,10 @@
+.header_userinfo { float: right; position: relative; padding: 15px 0; z-index: 10; }
+@media (max-width: 479px) { .header_userinfo { float: none; display: inline-block; } }
+.header_userinfo .top-userinfo { display: inline-block; }
+.header_userinfo .top-userinfo:hover .top-links { color: #90133b; }
+.header_userinfo .top-userinfo .top-links { font-weight: normal; padding: 0 15px; line-height: 1; color: white; text-shadow: none; font-size: 13px; cursor: pointer; text-transform: uppercase; font-weight: 700; }
+.header_userinfo .top-userinfo .top-links:after { content: "\f107"; font-family: "FontAwesome"; font-size: 14px; line-height: 1; vertical-align: top; padding-left: 7px; }
+.header_userinfo .top-userinfo ul { display: none; position: absolute; padding: 5px 0; top: 45px; left: 0; min-width: 157px; background: #fff; -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2); box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2); z-index: 2; }
+.header_userinfo .top-userinfo ul li { color: #333333; line-height: 30px; font-size: 14px; }
+.header_userinfo .top-userinfo ul li a, .header_userinfo .top-userinfo ul li > span { padding: 0 15px; display: block; color: #333333; }
+.header_userinfo .top-userinfo ul li.selected, .header_userinfo .top-userinfo ul li:hover a { color: #90133b; }

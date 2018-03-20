@@ -1,0 +1,8 @@
+.pos-new-product { background: url(../../../../img/bg_newproduct.jpg) no-repeat fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 70px 0; margin-bottom: 50px; }
+.pos-new-product .pos-title { margin-bottom: 30px; }
+.pos-new-product .pos-title h2 { background: url(../../../../img/icon-title-new.png) center top no-repeat; color: white; }
+.pos-new-product p.desc-title { text-align: center; color: white; font-size: 16px; line-height: 25px; padding-bottom: 30px; }
+.pos-new-product .boxprevnext { text-align: center; }
+.pos-new-product .boxprevnext a { opacity: 1; position: static; display: inline-block; border-radius: 0; margin: 0; width: auto; padding: 0 30px; }
+.pos-new-product .boxprevnext a.prev { border-radius: 20px 0px 0 20px; margin-right: -2px; border-right: 1px solid #fff; }
+.pos-new-product .boxprevnext a.next { border-radius: 0px 20px 20px 0; margin-left: -2px; border-left: 1px solid #fff; }

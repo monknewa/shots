@@ -1,0 +1,76 @@
+/* jQuery Countdown styles 2.0.0. */
+.countdown {
+	display:inline-block;
+	width:100%;
+}
+.is-countdown {
+	float: left;
+	width: 100%;
+}
+.pos-special-product .is-countdown{padding-top: 0;font-size: 16px!important;}
+.countdown-rtl {
+	direction: rtl;
+}
+.countdown-holding span {
+	color: #888;
+}
+.countdown-row {
+	clear: both;
+	width: 100%;
+	text-align: center;
+
+}
+#product .countdown-row{background: none;}
+/* 	.countdown-section {
+		width:auto;
+		margin:0 !important;
+	}
+	.countdown-show1 .countdown-section {
+		width: 100%;
+	}
+	.countdown-show2 .countdown-section {
+		width: 50%;
+	}
+	.countdown-show3 .countdown-section {
+		width: 33.33%;
+	}
+	.countdown-show4 .countdown-section {
+		width: 25%;
+	}
+	#product .countdown-show4 .countdown-section{width: auto;}
+	.countdown-show5 .countdown-section {
+		width: 19.5%;
+	}
+	.countdown-show6 .countdown-section {
+		width: 16.25%;
+	}
+	.countdown-show7 .countdown-section {
+		width: 14%;
+	} 
+ */
+.countdown-section {
+	position:relative;  
+	 display: inline-block;
+	text-align: center;	
+	line-height: 1.35;
+	width:55px;
+	margin:0 5px;
+	padding-bottom:10px;
+}
+
+.countdown-amount {
+display: block; font-size:20px; color: #fff; font-weight:700;background: #8ba462;border-radius:5px;
+line-height:55px;
+}
+.countdown-period {
+    display: block;
+    font-size:16px;
+	font-weight:700;
+	color:#333333;
+	line-height:40px;
+}
+.countdown-descr {
+	display: block;
+	width: 100%;
+}
+#defaultCountdown { width: 240px; height: 45px; }

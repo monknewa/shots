@@ -1,0 +1,15 @@
+#special_products_home .pos-title h2 { background: transparent; padding: 0; }
+#special_products_home .pos-title h2 span.first-title { color: #cdc4a5; font-size: 32px; }
+#special_products_home .pos-title h2 span.last-title { font-size: 89px; line-height: 1; letter-spacing: -10px; text-transform: uppercase; }
+#special_products_home .item-product { border: 0; text-align: center; }
+#special_products_home .item-product .products-inner { display: none; }
+#special_products_home .item-product .product-contents { background: transparent; padding: 0; }
+#special_products_home .item-product .product-contents h5.product-name a { margin-bottom: 15px; font-size: 24px; }
+#special_products_home .item-product .product-contents .hook-reviews { display: inline-block; margin: 10px 0; }
+#special_products_home .item-product .product-contents .price-box { float: none; }
+#special_products_home .item-product .product-contents .price-box .price { font-size: 24px; float: none; }
+#special_products_home .item-product .product-contents .price-box .old-price { margin: 0 5px; font-size: 18px; text-decoration: line-through; float: none; clear: none; }
+#special_products_home .item-product .product-contents .price-box .price-percent-reduction { display: none; }
+#special_products_home .item-product .product-contents .product-desc { font-size: 16px; color: #000000; line-height: 25px; margin-bottom: 20px; }
+#special_products_home .item-product .product-contents .cart a.ajax_add_to_cart_button { font-family: Cabin; line-height: 35px; border: 1px solid #90133b; padding: 0 25px; background: #90133b; color: white; border-radius: 20px; font-size: 14px; font-weight: 700; margin-bottom: 10px; text-transform: uppercase; -webkit-transition: all 300ms ease-in; -moz-transition: all 300ms ease-in; -ms-transition: all 300ms ease-in; -o-transition: all 300ms ease-in; transition: all 300ms ease-in; }
+#special_products_home .item-product .product-contents .cart a.ajax_add_to_cart_button:hover { background: white; color: #90133b; -webkit-transition: all 300ms ease-in; -moz-transition: all 300ms ease-in; -ms-transition: all 300ms ease-in; -o-transition: all 300ms ease-in; transition: all 300ms ease-in; }
