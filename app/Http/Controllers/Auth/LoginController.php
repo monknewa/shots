@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
-use App\User;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
 
@@ -46,19 +45,15 @@ class LoginController extends Controller
             'login_password' => 'required'
         ]);
 
-        $admin = User::where('email', $request->login_email)->first();
-        if ($admin->isAdmin) {
-            if (auth()->attempt([
-                'email' => $request->login_email,
-                'password' => $request->login_password], false
-            ))
-                return redirect('/dash');
-        } else {
-            if (auth()->attempt([
-                'email' => $request->login_email,
-                'password' => $request->login_password], false
-            ))
-                return redirect('/');
+
+        if (auth()->attempt([
+            'email' => $request->login_email,
+            'password' => $request->login_password], false
+        )) {
+            if (auth()->user()->isAdmin) {
+                return redirect("/dash");
+            }
+            return redirect("/home");
         }
 
         return redirect()->back()->withErrors(['login' => 'The credentials do not match our records']);

@@ -31,9 +31,9 @@
                                     </button>
                                 </div>
                                 <div class="form-group">
-                                    @if($errors->has('email'))
+                                    @if(! $errors->has('login'))
                                         @include("layouts.errors")
-                                    @endif
+                                        @endif
                                 </div>
                             </div>
                         </form>

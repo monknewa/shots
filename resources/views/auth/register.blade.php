@@ -22,7 +22,7 @@
     <label for="passwd">Password <sup>*</sup></label>
     <input type="password" class="form-control" name="password" required>
 </div>
-<div class=" password form-group">
+<div class="password form-group">
     <label for="passwd">Confirm Password <sup>*</sup></label>
     <input type="password" class="form-control" name="password_confirmation" required>
 </div>

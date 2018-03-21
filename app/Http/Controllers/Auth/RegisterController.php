@@ -47,42 +47,44 @@ class RegisterController extends Controller
      * @param  array $data
      * @return \Illuminate\Contracts\Validation\Validator
      */
-    protected function validator(array $data)
-    {
-        return Validator::make($data, [
-            'name' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255|unique:users,email',
-            'password' => 'required|string|min:6|confirmed',
-            'address' => 'required|string|min:6',
-            'phoneNumber' => 'required'
-        ]);
-    }
-
-    /**
-     * Create a new user instance after a valid registration.
-     *
-     * @param  array $data
-     * @return \App\User
-     */
-    protected function create(array $data)
-    {
-        return User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'address' => $data['address'],
-            'phoneNumber' => $data['phoneNumber'],
-            'password' => Hash::make($data['password']),
-        ]);
-    }
+//    protected function validator(array $data)
+//    {
+//        return Validator::make($data, [
+//            'name' => 'required|string|max:255',
+//            'email' => 'required|string|email|max:255|unique:users,email',
+//            'password' => 'required|string|min:6|confirmed',
+//            'address' => 'required|string|min:6',
+//            'phoneNumber' => 'required'
+//        ]);
+//    }
+//
+//    /**
+//     * Create a new user instance after a valid registration.
+//     *
+//     * @param  array $data
+//     * @return \App\User
+//     */
+//    protected function create(array $data)
+//    {
+//        return User::create([
+//            'name' => $data['name'],
+//            'email' => $data['email'],
+//            'address' => $data['address'],
+//            'phoneNumber' => $data['phoneNumber'],
+//            'password' => Hash::make($data['password']),
+//        ]);
+//    }
 
     public function register(Request $request)
     {
         $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users,email',
-            'password' => 'required|string|min:6|confirmed',
+            'password' => 'required|min:6|confirmed',
             'address' => 'required|string|min:6',
             'phoneNumber' => 'required'
+        ],[
+            'password.confirmed'=>'Password donot match'
         ]);
 
         $user = User::create([
