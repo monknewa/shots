@@ -592,6 +592,7 @@
                                             </a>
                                         </div>
                                     </div>
+                                    <div class="pt_menu_cms pt_menu"><div class="parentMenu"><a href="content/4-about-us.html"><span>Beer</span></a></div></div>
                                     <div class="pt_menu_cms pt_menu"><div class="parentMenu"><a href="content/4-about-us.html"><span>Bevarge</span></a></div></div>
                                     <div class="pt_menu_cms pt_menu"><div class="parentMenu"><a href="content/4-about-us.html"><span>Other</span></a></div></div>
                                     <div class="pt_menu_cms pt_menu"><div class="parentMenu"><a href="content/4-about-us.html"><span>Offer</span></a></div></div>
