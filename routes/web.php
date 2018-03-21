@@ -25,8 +25,13 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get("/logout",'Auth\LoginController@logout');
 
 Route::group(['prefix'=>'/dash'],function(){
-    Route::get("/products","ProductController@create");
+    Route::get("/","DashController@index");
+    Route::get("/products","ProductController@index");
+    Route::get("/products/add","ProductController@create");
+    Route::get("/products/{product}/edit","ProductController@edit");
     Route::post("/products","ProductController@store");
+    Route::put("/products/{product}","ProductController@update");
+    Route::delete("/products/{product}","ProductController@destroy");
 
 });
 

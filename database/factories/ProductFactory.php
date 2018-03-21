@@ -7,7 +7,7 @@ $factory->define(\App\Product::class, function (Faker $faker) {
         'name'=>$faker->name,
         'price'=>200,
         'image'=>$faker->name,
-        'product_type'=>1,
+        'category_id'=>1,
         'description'=>$faker->paragraph,
     ];
 });

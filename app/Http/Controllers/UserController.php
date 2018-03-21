@@ -82,8 +82,6 @@ class UserController extends Controller
         /** TODO create popup to update of details */
 
         return redirect('/');
-
-
     }
 
     /**
