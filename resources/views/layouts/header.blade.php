@@ -5,12 +5,13 @@
                 <div class="row">
                     <div class="pos_logo col-md-2 col-sm-12 col-xs-12">
                         <a href="http://demo.posthemes.com/pos_fobe/" title="Pos_fobe Responsive Prestashop Theme">
-                            <img class="logo img-responsive" src="../img/posfobe-logo-1457334179.jpg" alt="Pos_fobe Responsive Prestashop Theme" width="141" height="55">
-                        </a>
-                    </div>
-                    <div class="header-middle-right col-md-10 col-sm-12 col-xs-12">
+                            <!-- <img class="logo img-responsive" src="../img/posfobe-logo-1457334179.jpg" alt="Pos_fobe Responsive Prestashop Theme" width="141" height="55">-->
+                              <h1>SHOTS</h1>
+                          </a>
+                      </div>
+                      <div class="header-middle-right col-md-10 col-sm-12 col-xs-12">
 
-                        <!-- Block search module TOP -->
+                          <!-- Block search module TOP -->
 
                         <div id="search_block_top">
                             <div class=" icon-search">
@@ -169,8 +170,8 @@
                                         <ul id="ma-mobilemenu" class="tree  mobilemenu nav-collapse collapse dynamized" style="display: none;">
 
                                             <li>
-                                                <span class="grower CLOSE"> <span class="head"><a href="javascript:void(0)"></a></span></span><a href="12-wine-basics.html" title="">
-                                                    Wine Basics
+                                                <span class="grower CLOSE"> <span class="head"><a href="javascript:void(0)"></a></span></span><a href="12-wine-basics.html" title="Whiskey">
+
                                                 </a>
                                                 <ul style="display: none;">
 
@@ -327,7 +328,7 @@
 
                                             <li>
                                                 <span class="grower CLOSE"> <span class="head"><a href="javascript:void(0)"></a></span></span><a href="33-tasting-wine.html" title="">
-                                                    Tasting Wine
+                                                    RUM
                                                 </a>
                                                 <ul style="display: none;">
 
@@ -551,7 +552,7 @@
                                     <div id="pt_menu_home" class="pt_menu act"><div class="parentMenu"><a href="http://demo.posthemes.com/pos_fobe/"><span>Home</span></a></div></div><div id="pt_menu12" class="pt_menu nav-1">
                                         <div class="parentMenu">
                                             <a href="12-wine-basics.html">
-                                                <span>Wine Basics</span>
+                                                <span>Whiskey</span>
                                             </a>
                                         </div>
                                         <div id="popup12" class="popup" style="top: 105px; left: 50px; width: 920px; display: none;">
@@ -563,7 +564,7 @@
                                     </div><div id="pt_menu33" class="pt_menu nav-2">
                                         <div class="parentMenu">
                                             <a href="33-tasting-wine.html">
-                                                <span>Tasting Wine</span>
+                                                <span>Vodka</span>
                                             </a>
                                         </div>
                                         <div id="popup33" class="popup" style="top: 105px; left: 205px; width: 700px; display: none;">
@@ -575,7 +576,7 @@
                                     </div><div id="pt_menu49" class="pt_menu nav-3">
                                         <div class="parentMenu">
                                             <a href="49-wine-pairing.html">
-                                                <span>Wine Pairing</span>
+                                                <span>Rum</span>
                                             </a>
                                         </div>
                                         <div id="popup49" class="popup" style="display: none; width: 1228px;">
@@ -587,10 +588,14 @@
                                     </div><div id="pt_menu60" class="pt_menu nav-4 pt_menu_no_child">
                                         <div class="parentMenu">
                                             <a href="60-districts.html">
-                                                <span>Districts</span>
+                                                <span>Wine</span>
                                             </a>
                                         </div>
-                                    </div><div class="pt_menu_cms pt_menu"><div class="parentMenu"><a href="content/4-about-us.html"><span>About us</span></a></div></div>
+                                    </div>
+                                    <div class="pt_menu_cms pt_menu"><div class="parentMenu"><a href="content/4-about-us.html"><span>Bevarge</span></a></div></div>
+                                    <div class="pt_menu_cms pt_menu"><div class="parentMenu"><a href="content/4-about-us.html"><span>Other</span></a></div></div>
+                                    <div class="pt_menu_cms pt_menu"><div class="parentMenu"><a href="content/4-about-us.html"><span>Offer</span></a></div></div>
+                                    <div class="pt_menu_cms pt_menu"><div class="parentMenu"><a href="content/4-about-us.html"><span>About us</span></a></div></div>
 
                                 </div>
                             </div>

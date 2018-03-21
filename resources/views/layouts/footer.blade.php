@@ -8,16 +8,15 @@
                     </div>
                     <div class=" col-right col-md-9 col-sm-12 col-xs-12">
                         <h2>about us</h2>
-                        <div class="des">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-                            euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim adm.Lorem
-                            ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
-                            ut laoreet dolore.
+                        <div class="des">we provide the all kind of imported and domestic liquor .we deliver products to your home at anytime you order the item .
+                            we are availavel for 365 days and 24 hours.we have a cash in delivery system.The online liquor also has the physical store availavel which
+                            is sitauated in lazimpat kathmandu.Our store thinks about the customer satisafaction.
                         </div>
                         <div class="footer-contact">
                             <p class="adress"><span
                                         class="ft-content">Lazimpat,Kathmandu</span></p>
                             <p class="phone"><span class="ft-content"><span
-                                            class="mobile">Telephone: 866-540-3229</span><br>
+                                            class="mobile">Telephone: +9779803377390</span><br>
                             </p>
                             <p class="email"><span class="ft-content"><a href="#">Email: monknewa@gmail.com</a></span>
                             </p>

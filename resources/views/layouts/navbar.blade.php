@@ -49,11 +49,11 @@
                             <input type="hidden" name="id_currency" id="id_currency" value="">
                             <input type="hidden" name="SubmitCurrency" value="">
                             <span class="cur-label">Currency :</span>
-                            <strong>GBP</strong></div>
+                            <strong>NPR</strong></div>
                         <ul id="first-currencies" class="currencies_ul toogle_content">
                             <li>
-                                <a href="javascript:setCurrency(2);" rel="nofollow" title="Dollar (Usd)">
-                                    Dollar (Usd)
+                                <a href="javascript:setCurrency(2);" rel="nofollow" title=" Nepalease rupee(NPR)">
+                                  Nepali rupee(NPR)
                                 </a>
                             </li>
                             <li class="selected">
@@ -64,9 +64,14 @@
                         </ul>
                     </form>
                 </div>
-
                 <span class="shop-phone">
-		<i class="icon-phone"></i><strong>phone: </strong><strong>0123-456-789</strong>
+		<i class="icon-phone"></i><strong>phone: </strong><strong>+9774427151</strong>
+	</span>
+                <span class="shop-phone">
+		<i class="icon-clock-o"></i><strong>Delivery time:</strong><strong>24/7 hours and 365 days</strong>
+	</span>
+                <span class="shop-phone">
+		<i class="icon-money"></i><strong></strong><strong>cash on delivery</strong>
 	</span>
             </nav>
         </div>
