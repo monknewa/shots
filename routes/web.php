@@ -23,3 +23,12 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get("/logout",'Auth\LoginController@logout');
+
+Route::group(['prefix'=>'/dash'],function(){
+    Route::get("/products","ProductController@create");
+    Route::post("/products","ProductController@store");
+
+});
+
+Route::get("/profile/user","UserController@index");
+Route::put("/profile/user/{user}","UserController@update");
