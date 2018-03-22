@@ -34,8 +34,6 @@
                                 $(".icon-search").on("click", function(){
                                     $(this).parent().find('.toogle_content').slideToggle('medium');
                                 });
-
-
                             });
 
                         </script><!-- MODULE Block cart -->
@@ -549,7 +547,7 @@
 
                             <div class="nav-container visible-lg visible-md scroll-menu">
                                 <div id="pt_custommenu" class="pt_custommenu">
-                                    <div id="pt_menu_home" class="pt_menu act"><div class="parentMenu"><a href="http://demo.posthemes.com/pos_fobe/"><span>Home</span></a></div></div><div id="pt_menu12" class="pt_menu nav-1">
+                                    <div id="pt_menu_home" class="pt_menu act"><div class="parentMenu"><a href="/"><span>Home</span></a></div></div><div id="pt_menu12" class="pt_menu nav-1">
                                         <div class="parentMenu">
                                             <a href="12-wine-basics.html">
                                                 <span>Whiskey</span>

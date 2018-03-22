@@ -6,7 +6,7 @@
                         <div class="brand-text hidden-sm-down"><strong class="text-primary">SHO</strong><strong class="text-info  ">TS </strong></div></a></div>
                 <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
                     <li class="nav-item">
-                        <a href="logout"
+                        <a href="/logout"
                            class="nav-link logout">Logout<i class="fa fa-sign-out"></i>
                         </a>
                     </li>

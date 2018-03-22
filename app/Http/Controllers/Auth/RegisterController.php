@@ -80,9 +80,9 @@ class RegisterController extends Controller
         $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users,email',
-            'password' => 'required|min:6|confirmed',
-            'address' => 'required|string|min:6',
-            'phoneNumber' => 'required'
+            'password' => 'required|min:6|max:255|confirmed',
+            'address' => 'required|string|max:255|min:6',
+            'phoneNumber' => 'required|max:255'
         ],[
             'password.confirmed'=>'Password donot match'
         ]);

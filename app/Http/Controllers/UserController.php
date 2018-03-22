@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 class UserController extends Controller
 {
@@ -12,6 +13,11 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function __construct()
+    {
+        $this->middleware("auth");
+    }
+
     public function index()
     {
         return view("user.create");
@@ -69,19 +75,7 @@ class UserController extends Controller
      */
     public function update(Request $request, User $user)
     {
-        $request->validate([
-            'phoneNumber' => 'required',
-            'address' => 'required'
-        ]);
 
-        $update = $user->update([
-            'phoneNumber' => $request->phoneNumber,
-            'address' => $request->address,
-        ]);
-
-        /** TODO create popup to update of details */
-
-        return redirect('/');
     }
 
     /**
@@ -93,5 +87,33 @@ class UserController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+
+    public function profile()
+    {
+
+        $user = auth()->user();
+        return view("user.profile", compact('user'));
+    }
+
+    public function profileedit(Request $request, $user)
+    {
+
+        $request->validate([
+            'name' => 'required|max:255',
+            'address' => 'required|max:255',
+            'phoneNumber' => 'required|max:255',
+        ]);
+        $user = User::find(decrypt($user));
+
+        $user->update([
+            'name' => $request->name,
+            "address" => $request->address,
+            'phoneNumber' => $request->phoneNumber
+        ]);
+       \session()->push("successProfileUpdate","updated");
+        return redirect("/user");
+
     }
 }

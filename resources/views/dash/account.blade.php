@@ -2,120 +2,78 @@
 
 @section('content')
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-sm-12 col-lg-6">
+    @if(session()->has('successAdmin') )
+        <script>alert('Profile updated')</script>
+        <?php session()->forget("successAdmin")?>
+    @endif
 
-                <h3>Change Email</h3>
-                <form action="/dash/account/changeEmail" method="post">
-                    {{csrf_field()}}
-                    {{method_field('put')}}
+    <div class="container">
+        <form action="/dash/account" method="post">
+            {{csrf_field()}}
+            {{method_field('put')}}
+            <div class="row">
+                <div class="col-md-6 col-sm-12 col-lg-6">
+
+                    <h3>Change Email</h3>
 
                     <div class="form-group">
                         <label for="">Email Address</label>
                         <input type="email"
-                               class="form-control" name="email" id="email" value="{{$email}}" maxlength="255">
+                               class="form-control" name="email" id="email" value="{{auth()->user()->email}}"
+                               maxlength="255" required>
                     </div>
                     <div class="form-group">
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#modelId"
-                                onclick="$('#newemail').html($('#email').val())">
-                            Change Email Address
-                        </button>
-                        <!-- Modal -->
-                        <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
-                             aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h4 class="modal-title" id="modelTitleId">Change your current email</h4>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        Do you want to change your email from <span class="text-info">{{$email}}</span>
-                                        to <span class="text-success" id="newemail"></span>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close
-                                        </button>
-                                        <button type="submit" class="btn btn-primary">Change Email Address
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <label for="">Name</label>
+                        <input type="text"
+                               class="form-control" name="name" id="name" value="{{auth()->user()->name}}"
+                               maxlength="255" required>
                     </div>
                     <div class="form-group">
-                        @if($errors->has('email'))
-                            @include('dash.partials.errors')
-                        @endif
+                        <label for=""> Address</label>
+                        <input type="text"
+                               class="form-control" name="address" id="address" value="{{auth()->user()->address}}"
+                               maxlength="255" required>
                     </div>
-                </form>
-            </div>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="col-md-6 col-lg-6 col-sm-12">
+                    <div class="form-group">
+                        <label for="">Phone Number</label>
+                        <input type="number"
+                               class="form-control" name="phoneNumber" id="phoneNumber"
+                               value="{{auth()->user()->phoneNumber}}" maxlength="255" required>
+                    </div>
 
-                <form action="/dash/account/changepwd" method="post">
-                    {{csrf_field()}}
-                    {{method_field('put')}}
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-6 col-sm-12">
 
                     <div class="form-group">
                         <label for=""> Change Password</label>
-                        <input type="password" name="pwd" class="form-control" required maxlength="255" minlength="5">
+                        <input type="password" name="password" class="form-control" required maxlength="255"
+                               minlength="5">
                     </div>
                     <div class="form-group">
                         <label for="">Confirm Password</label>
-                        <input type="password" name="pwd_confirmation" class="form-control" required minlength="5"
+                        <input type="password" name="password_confirmation" class="form-control" required minlength="5"
                                maxlength="255">
                     </div>
 
                     <div class="form-group">
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-warning "
-                                onclick="$('#newpwd').html($('[name=pwd]').val())"
-                                data-toggle="modal" data-target="#changePwd">
+                        <button class="btn btn-warning " onclick="alert('Do you want to change the details')">
                             Change Password
                         </button>
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="changePwd" tabindex="-1" role="dialog"
-                             aria-labelledby="modelTitleId"
-                             aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h4 class="modal-title" id="modelTitleId">Change your password</h4>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        Do you want to change your password to <span id="newpwd"></span>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close
-                                        </button>
-                                        <button class="btn btn-primary">Save</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
 
                     <div class="form-group">
-                        @if($errors->has('pwd'))
+                        <div class="form-group">
                             @include('dash.partials.errors')
-                        @endif
+                        </div>
                     </div>
 
-                </form>
-
+                </div>
             </div>
-        </div>
+        </form>
     </div>
 @endsection
 

@@ -22,7 +22,7 @@ class RedirectIfAuthenticated
             if (\auth()->user()->isAdmin){
                 return redirect('/dash');
             }else{
-                return redirect('/home');
+                return redirect('/user');
             }
         }
 

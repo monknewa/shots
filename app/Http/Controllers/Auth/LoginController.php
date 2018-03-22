@@ -53,7 +53,7 @@ class LoginController extends Controller
             if (auth()->user()->isAdmin) {
                 return redirect("/dash");
             }
-            return redirect("/home");
+            return redirect("/user");
         }
 
         return redirect()->back()->withErrors(['login' => 'The credentials do not match our records']);

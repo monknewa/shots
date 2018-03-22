@@ -9,29 +9,22 @@
                                 <span>{{auth()->user()->name}}</span>
                             </div>
                             <ul id="header_links" class=" vertical-link header_links_ul toogle_content">
-                                <li class="first"><a class="link-myaccount" href="loginfd9a.html" title="My account">
+                                <li class="first"><a class="link-myaccount" href="/user" title="My account">
                                         My account
                                     </a></li>
-                                <li><a class="link-wishlist wishlist_block" href="login619c.html" title="My wishlist">
-                                        My wishlist</a></li>
-                                <li>
-                                        <a class="login" href="/logout" rel="nofollow"
-                                           title="Log in to your customer account">
-                                            Log out
-                                        </a>
-
                                 </li>
+
+                                <li class="first"> <a class="login" href="/logout" rel="nofollow"
+                                        title="Log in to your customer account">
+                                        Log out
+                                    </a></li>
                             </ul>
                         @else
                             <div class=" top-links current">
                                 <span>My Account</span>
                             </div>
                             <ul id="header_links" class=" vertical-link header_links_ul toogle_content">
-                                <li class="first"><a class="link-myaccount" href="loginfd9a.html" title="My account">
-                                        My account
-                                    </a></li>
-                                <li><a class="link-wishlist wishlist_block" href="login619c.html" title="My wishlist">
-                                        My wishlist</a></li>
+
                                 <li><a class="link-checkout" href="order.html" title="checkout">Checkout</a></li>
                                 <li>
                                     <a class="login" href="/login" rel="nofollow"
@@ -50,18 +43,7 @@
                             <input type="hidden" name="SubmitCurrency" value="">
                             <span class="cur-label">Currency :</span>
                             <strong>NPR</strong></div>
-                        <ul id="first-currencies" class="currencies_ul toogle_content">
-                            <li>
-                                <a href="javascript:setCurrency(2);" rel="nofollow" title=" Nepalease rupee(NPR)">
-                                  Nepali rupee(NPR)
-                                </a>
-                            </li>
-                            <li class="selected">
-                                <a href="javascript:setCurrency(1);" rel="nofollow" title="Pound (GBP)">
-                                    Pound (GBP)
-                                </a>
-                            </li>
-                        </ul>
+
                     </form>
                 </div>
                 <span class="shop-phone">

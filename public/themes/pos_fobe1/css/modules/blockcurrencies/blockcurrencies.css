@@ -2,7 +2,7 @@
 #currencies-block-top span.firstWord { display: none; }
 #currencies-block-top:hover div.current { color: #90133b; }
 #currencies-block-top div.current { font-weight: normal; padding: 0 15px; line-height: 1; color: white; text-shadow: none; cursor: pointer; font-size: 13px; text-transform: uppercase; font-weight: 700; }
-#currencies-block-top div.current:after { content: "\f107"; font-family: "FontAwesome"; font-size: 13px; line-height: 1; vertical-align: top; padding-left: 7px; }
+
 #currencies-block-top ul { display: none; position: absolute; padding: 5px 0; top: 45px; left: 0; min-width: 157px; background: #fff; -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2); box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2); z-index: 2; }
 #currencies-block-top ul li { color: #333333; line-height: 30px; font-size: 14px; }
 #currencies-block-top ul li a, #currencies-block-top ul li > span { padding: 0 15px; display: block; color: #333333; }

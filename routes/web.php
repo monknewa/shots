@@ -15,6 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/user', "UserController@profile");
+Route::put('/user/{user}', "UserController@profileedit")->name("profileedit");
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -32,6 +35,8 @@ Route::group(['prefix'=>'/dash','middleware'=>['auth','admin']],function(){
     Route::post("/products","ProductController@store");
     Route::put("/products/{product}","ProductController@update");
     Route::delete("/products/{product}","ProductController@destroy");
+    Route::get("/account","DashController@account");
+    Route::put("/account","DashController@accountEdit");
 });
 
 Route::get("/profile/user","UserController@index");
