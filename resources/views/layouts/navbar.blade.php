@@ -21,7 +21,7 @@
                             </ul>
                         @else
                             <div class=" top-links current">
-                                <span>My Account</span>
+                                <span><i class="icon-user"></i>My Account</span>
                             </div>
                             <ul id="header_links" class=" vertical-link header_links_ul toogle_content">
 
