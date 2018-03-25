@@ -12,7 +12,9 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <link rel="icon" type="image/vnd.microsoft.icon"
           href="http://demo.posthemes.com/pos_fobote/img/favicon.ico?1459389507">
-    <link rel="shortcut icon" type="image/x-icon" href="http://demo.posthemes.com/pos_fobe/img/favicon.ico?1459389507">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico?1459389507">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/themes/pos_fobe1/css/global.css" type="text/css" media="all">
     <link rel="stylesheet" href="/themes/pos_fobe1/css/autoload/highdpi.css" type="text/css" media="all">
     <link rel="stylesheet" href="/themes/pos_fobe1/css/autoload/responsive-tables.css" type="text/css" media="all">
@@ -88,19 +90,15 @@
     <link href="http://fonts.googleapis.com/css?family=Cabin:400,400italic,500,500italic,600,600italic,700,700italic"
           rel="stylesheet" type="text/css">
     <style type="text/css">
-
         h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, a {
             font-family: Source Sans Pro;
         }
-
         .titleFont {
             font-family: Source Sans Pro !important;
         }
-
         body, .footer-container #footer a, .footer-container #footer ul li {
             font-family: Cabin;
         }
-
         .linkFont {
             font-family: Cabin !important;
         }
@@ -110,6 +108,7 @@
     <!--[if IE 8]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+
     <![endif]-->
     <style type="text/css">.fancybox-margin {
             margin-right: 17px;

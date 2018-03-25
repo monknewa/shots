@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', "PagesController@index");
 
 Route::get('/user', "UserController@profile");
 Route::put('/user/{user}', "UserController@profileedit")->name("profileedit");
@@ -39,7 +37,7 @@ Route::group(['prefix' => '/dash', 'middleware' => ['auth', 'admin']], function 
         Route::put("/{product}", "ProductController@update");
         Route::delete("/{product}", "ProductController@destroy");
     });
-    
+
     /** User edit forom dash */
     Route::group(['prefix' => '/users'], function () {
         Route::get("/", "UserController@dashIndex");

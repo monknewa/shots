@@ -21,6 +21,7 @@ class DashController extends Controller
         return view("dash.account");
     }
 
+
     public function accountEdit(Request $request)
     {
         $request->validate([

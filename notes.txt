@@ -6,11 +6,13 @@ Finished
 -change admin credentials
 -products crud
 -profile
+-mail setup
+-front page 1/2
 
 
 To do
 -offers
--front page
+-front page1/2
 -product page
 -sales
 -notification
