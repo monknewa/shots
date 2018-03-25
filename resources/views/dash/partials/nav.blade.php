@@ -18,19 +18,22 @@
                 <li class=" {{ (request()->path() == "dash/products")?"active":""  }}">
                     <a href="/dash/products"><i class="fa fa-paperclip"></i><span>Product</span></a>
                 </li>
-                <li class=" {{ (request()->path() == "dash/category")?"active":""  }}">
-                    <a href="/dash/category"> <i class="fa fa-folder"></i><span>Catgory</span></a>
+                <li class=" {{ (request()->path() == "dash/users")?"active":""  }}">
+                    <a href="/dash/users"><i class="fa fa-paperclip"></i><span>Users</span></a>
                 </li>
-                <li class=" {{ (request()->path() == "dash/subcategory")?"active":""  }}">
-                    <a href="/dash/subcategory"> <i class="fa fa-folder-open"> </i><span>Sub Categories </span></a>
-                </li>
-                <li class=" {{ (request()->path() == "dash/inquiry")?"active":""  }}">
-                    <a href="/dash/inquiry"> <i class="fa fa-envelope"></i><span>Inquiry</span></a>
-                </li>
-                <li class=" {{ (request()->path() == "dash/special-offers")?"active":""  }}">
-                    <a href="/dash/special-offers"> <i
-                                class="icon-interface-windows"></i><span>Special Offers </span></a>
-                </li>
+                {{--<li class=" {{ (request()->path() == "dash/category")?"active":""  }}">--}}
+                    {{--<a href="/dash/category"> <i class="fa fa-folder"></i><span>Catgory</span></a>--}}
+                {{--</li>--}}
+                {{--<li class=" {{ (request()->path() == "dash/subcategory")?"active":""  }}">--}}
+                    {{--<a href="/dash/subcategory"> <i class="fa fa-folder-open"> </i><span>Sub Categories </span></a>--}}
+                {{--</li>--}}
+                {{--<li class=" {{ (request()->path() == "dash/inquiry")?"active":""  }}">--}}
+                    {{--<a href="/dash/inquiry"> <i class="fa fa-envelope"></i><span>Inquiry</span></a>--}}
+                {{--</li>--}}
+                {{--<li class=" {{ (request()->path() == "dash/special-offers")?"active":""  }}">--}}
+                    {{--<a href="/dash/special-offers"> <i--}}
+                                {{--class="icon-interface-windows"></i><span>Special Offers </span></a>--}}
+                {{--</li>--}}
                 <li class="{{ (request()->path() == "dash/account")?"active":""  }}">
                     <a href="/dash/account"> <i
                                 class="fa fa-key"></i><span>Account </span></a>

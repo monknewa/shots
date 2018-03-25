@@ -26,7 +26,12 @@
                     <div class="form-group">
                         <label for="">Product Price</label>
                         <input type="number" value="{{isset($product)?$product->price:old('price') }}" name="price"
-                               required class="form-control" maxlength="255">
+                               required class="form-control"  min="0">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Product Quantity</label>
+                        <input type="number" value="{{isset($product)?$product->quantity:old('quantity') }}" name="quantity"
+                               required class="form-control" min="0">
                     </div>
                     <div class="form-group">
                         <label for="">Category</label>

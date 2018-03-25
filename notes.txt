@@ -1,0 +1,22 @@
+
+Finished
+-register
+-login
+-admin login
+-change admin credentials
+-products crud
+-profile
+
+
+To do
+-offers
+-front page
+-product page
+-sales
+-notification
+-dash home page
+    -total sales
+    -total users
+    -total orders
+
+-confirm 18 page

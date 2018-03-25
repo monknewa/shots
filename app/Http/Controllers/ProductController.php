@@ -42,6 +42,7 @@ class ProductController extends Controller
         $request->validate([
             'name' => 'required',
             'price' => 'required|numeric',
+            'quantity' => 'required|numeric|min:0',
             'image' => 'required|image|mimes:jpeg,jpg,png',
             'description' => 'required'
         ]);
@@ -54,6 +55,7 @@ class ProductController extends Controller
             'name' => $request->name,
             'price' => $request->price,
             'category_id' => $request->category_id,
+            'quantity' => $request->quantity,
             'image' => "/img/products/" . $request->name . ".$fileExtension",
             'description' => $request->name,
         ]);
@@ -80,9 +82,10 @@ class ProductController extends Controller
     public function edit(Product $product)
     {
         $categories = Category::all();
-        $glob = glob(public_path("img/products/$product->name.{jpeg,jpg,png}"), GLOB_BRACE);
+        $image = "";
+        if ($glob = glob(public_path("img/products/$product->name.{jpeg,jpg,png}"), GLOB_BRACE))
+            $image = basename($glob[0]);
 
-        $image = basename($glob[0]);
 
         return view("dash.products.create", compact('product', 'categories', 'image'));
     }
@@ -100,7 +103,8 @@ class ProductController extends Controller
             'name' => 'required',
             'price' => 'required|numeric',
             'image' => 'image|mimes:jpeg,jpg,png',
-            'description' => 'required'
+            'description' => 'required',
+            'quantity'=>'required|min:0'
         ]);
 
         if ($request->has('image')) {
@@ -114,6 +118,7 @@ class ProductController extends Controller
                 'name' => $request->name,
                 'price' => $request->price,
                 'category_id' => $request->category_id,
+                'quantity' => $request->quantity,
                 'image' => "img/products/" . $request->name . "." . $file->getClientOriginalExtension(),
                 'description' => $request->description,
             ];
@@ -127,6 +132,7 @@ class ProductController extends Controller
                 'name' => $request->name,
                 'price' => $request->price,
                 'category_id' => $request->category_id,
+                'quantity' => $request->quantity,
                 'description' => $request->description,
                 'image' => "img/products/" . $request->name . "." . $extension,
             ];

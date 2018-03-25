@@ -8,7 +8,7 @@
     @endif
 
     <div class="container">
-        <form action="/dash/account" method="post">
+        <form action="/dash/account" method="post" onsubmit=" return confirm('Do you want to change the details')">
             {{csrf_field()}}
             {{method_field('put')}}
             <div class="row">
@@ -41,7 +41,6 @@
                                value="{{auth()->user()->phoneNumber}}" maxlength="255" required>
                     </div>
 
-
                 </div>
             </div>
             <div class="row">
@@ -60,7 +59,7 @@
 
                     <div class="form-group">
                         <!-- Button trigger modal -->
-                        <button class="btn btn-warning " onclick="alert('Do you want to change the details')">
+                        <button class="btn btn-warning " >
                             Change Password
                         </button>
                     </div>

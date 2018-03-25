@@ -27,15 +27,21 @@ class DashController extends Controller
             'name' => 'required|max:255',
             'address' => 'required|max:255',
             'phoneNumber' => 'required|max:255',
-            'email' => 'required|max:255|unique:users,email',
+            'email' => 'required|max:255|unique:users,email,'.auth()->id(),
             'password' => "required|max:255|confirmed"
         ]);
 
         $user = auth()->user();
 
-        $user->update(request(['name', 'address', 'phoneNumber', 'email', 'password']));
+        $user->update([
+            'name' => $request->name,
+            'address' => $request->address,
+            'phoneNumber' => $request->phoneNumber,
+            'email' => $request->email,
+            'password' => bcrypt($request->password)
+        ]);
 
-        \session()->push("successAdmin","updated");
+        \session()->push("successAdmin", "updated");
 
         return redirect()->back();
     }

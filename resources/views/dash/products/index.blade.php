@@ -19,6 +19,7 @@
                     <th>Added on</th>
                     <th>Product Name</th>
                     <th>Price</th>
+                    <th>Quantity</th>
                     <th>Category</th>
                     <th></th>
                 </tr>
@@ -34,6 +35,9 @@
                         </td>
                         <td>
                             <span id="item-price">{{$product->price}}</span>
+                        </td>
+                        <td>
+                            <span id="item-quantity">{{$product->quantity}}</span>
                         </td>
                         <td><span>{{$product->category->type}}</span></td>
                         <td>
