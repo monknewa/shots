@@ -11,6 +11,7 @@ Finished
 
 
 To do
+categorie in dash
 -offers
 -front page1/2
 -product page
