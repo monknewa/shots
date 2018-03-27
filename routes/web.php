@@ -27,10 +27,9 @@ Route::get("/logout", 'Auth\LoginController@logout');
 
 Route::group(['prefix' => '/dash', 'middleware' => ['auth', 'admin']], function () {
     Route::get("/", "DashController@index");
-
     /** Product routes */
     Route::group(['prefix' => '/products'], function () {
-        Route::get("/", "ProductController@index");
+        Route::get("/", "DashController@products");
         Route::get("/add", "ProductController@create");
         Route::get("/{product}/edit", "ProductController@edit");
         Route::post("", "ProductController@store");
@@ -50,5 +49,8 @@ Route::group(['prefix' => '/dash', 'middleware' => ['auth', 'admin']], function 
 
 Route::get("/profile/user", "UserController@index");
 Route::put("/profile/user/{user}", "UserController@update");
+
+
+Route::get("/products/","PagesController@products");
 
 

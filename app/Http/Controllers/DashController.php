@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Product;
 use Illuminate\Http\Request;
 
 class DashController extends Controller
@@ -21,6 +22,10 @@ class DashController extends Controller
         return view("dash.account");
     }
 
+    public function products(){
+        $products = Product::latest()->get();
+        return view('dash.products.index', compact('products'));
+    }
 
     public function accountEdit(Request $request)
     {

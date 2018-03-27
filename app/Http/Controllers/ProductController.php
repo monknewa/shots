@@ -16,8 +16,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $products = Product::latest()->get();
-        return view('dash.products.index', compact('products'));
+
     }
 
     /**
