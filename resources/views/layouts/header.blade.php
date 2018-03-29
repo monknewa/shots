@@ -584,7 +584,7 @@
                                     <div id="pt_menu_home"
                                          class="pt_menu {{ (request()->path() == "products/$category->name")?"act":""  }} ">
                                         <div class="parentMenu"><a
-                                                    href="/products/{{$category->type}}"><span>{{$category->type}}</span></a>
+                                                    href="/products/{{strtolower($category->type)}}"><span>{{$category->type}}</span></a>
                                         </div>
                                     </div>
                                 @endforeach

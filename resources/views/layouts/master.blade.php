@@ -2,17 +2,18 @@
 <html lang="{{ app()->getLocale() }}">
 <head>
     <meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
-    <meta name="csrf-=token" content="{{csrf_token()}}">
+    <meta name="csrf-token" content="{{csrf_token()}}">
     <meta charset="utf-8">
     <title>Shots</title>
-    <meta name="description" content="Shop powered by PrestaShop">
-    <meta name="generator" content="PrestaShop">
-    <meta name="robots" content="index,follow">
+    <meta name="description" content="SHOTS">
+
     <meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="icon" type="image/vnd.microsoft.icon"
-          href="http://demo.posthemes.com/pos_fobote/img/favicon.ico?1459389507">
+
     <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico?1459389507">
+
+    <script> window.Laravel = {
+            'csrfToken': "{{csrf_token()}}"
+        }</script>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/themes/pos_fobe1/css/global.css" type="text/css" media="all">
@@ -89,7 +90,7 @@
           rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Cabin:400,400italic,500,500italic,600,600italic,700,700italic"
           rel="stylesheet" type="text/css">
-    <style type="text/css">
+{{--    <style type="text/css">
         h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, a {
             font-family: Source Sans Pro;
         }
@@ -102,7 +103,7 @@
         .linkFont {
             font-family: Cabin !important;
         }
-    </style>
+    </style>--}}
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,600&amp;subset=latin,latin-ext"
           type="text/css" media="all">
     <!--[if IE 8]>

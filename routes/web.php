@@ -43,6 +43,12 @@ Route::group(['prefix' => '/dash', 'middleware' => ['auth', 'admin']], function 
         Route::delete("/{user}", "UserController@dashDestroy");
     });
 
+    Route::group(['prefix' => '/category'], function () {
+        Route::get("/","CategoryController@index");
+        Route::get("/{category}/edit","CategoryController@edit");
+        Route::put("/{category}/edit","CategoryController@update");
+    });
+
     Route::get("/account", "DashController@account");
     Route::put("/account", "DashController@accountEdit");
 });
@@ -51,6 +57,13 @@ Route::get("/profile/user", "UserController@index");
 Route::put("/profile/user/{user}", "UserController@update");
 
 
-Route::get("/products/","PagesController@products");
+Route::get("/products/", "PagesController@products");
+Route::get("/products/{product}", "PagesController@products");
 
+Route::group(['prefix'=>'/ajax'], function(){
+    Route::post("/products","ProductController@ajaxProducts");
+    Route::post("/category","CategoryController@ajaxCategory");
+    Route::post("/products/{category}","ProductController@ajaxProductCategory");
+
+});
 

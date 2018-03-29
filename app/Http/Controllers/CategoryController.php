@@ -14,7 +14,8 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        //
+        $categories = Category::orderBy("type","asc")->get();
+        return view("dash.category.index", compact("categories"));
     }
 
     /**
@@ -57,7 +58,8 @@ class CategoryController extends Controller
      */
     public function edit(Category $category)
     {
-        //
+
+       return view("dash.category.update",compact("category"));
     }
 
     /**
@@ -69,7 +71,16 @@ class CategoryController extends Controller
      */
     public function update(Request $request, Category $category)
     {
-        //
+       $request->validate([
+           'type'=>'required',
+       ]);
+
+       $category->update([
+           'type'=>$request->type,
+       ]);
+
+       return redirect("/dash/category");
+
     }
 
     /**
@@ -81,5 +92,10 @@ class CategoryController extends Controller
     public function destroy(Category $category)
     {
         //
+    }
+
+    public function ajaxCategory(){
+        $categories = Category::orderBy("type")->get();
+        return response()->json($categories);
     }
 }

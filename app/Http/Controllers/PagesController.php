@@ -16,7 +16,8 @@ class PagesController extends Controller
 
     public function products()
     {
-        return view("products.index");
+        $breadCrumbs = explode("/",request()->path());
+        return view("products.index",compact('breadCrumbs'));
     }
 
 

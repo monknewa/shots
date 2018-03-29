@@ -4,20 +4,12 @@ namespace App\Http\Controllers;
 
 use App\Category;
 use App\Product;
+use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 
 class ProductController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-
-    }
 
     /**
      * Show the form for creating a new resource.
@@ -61,16 +53,6 @@ class ProductController extends Controller
         return redirect("/dash/products");
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Product $product
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Product $product)
-    {
-        //
-    }
 
     /**
      * Show the form for editing the specified resource.
@@ -103,7 +85,7 @@ class ProductController extends Controller
             'price' => 'required|numeric',
             'image' => 'image|mimes:jpeg,jpg,png',
             'description' => 'required',
-            'quantity'=>'required|min:0'
+            'quantity' => 'required|min:0'
         ]);
 
         if ($request->has('image')) {
@@ -158,5 +140,18 @@ class ProductController extends Controller
         } catch (\Exception $e) {
         }
         return redirect("/dash/products");
+    }
+
+    public function ajaxProducts()
+    {
+        $products = Product::latest()->paginate(5);
+        return response()->json($products);
+    }
+
+    public function ajaxProductCategory($category)
+    {
+        $category = Category::where("type",$category)->firstOrFail();
+        $products = Product::where("category_id",$category->id)->latest()->paginate(5);
+        return response()->json($products);
     }
 }
