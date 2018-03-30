@@ -1,0 +1,10 @@
+.cart_overlay {
+    display: none;
+    position: absolute;
+    background: white;
+    left: -300px;
+    top: 40px;
+    border: 1px solid black;
+}
+
+
