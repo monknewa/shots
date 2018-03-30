@@ -51005,7 +51005,7 @@ var render = function() {
                                   }
                                 }
                               },
-                              [_vm._v("x\n                                ")]
+                              [_c("i", { staticClass: "fa fa-trash" })]
                             )
                           ])
                         ])

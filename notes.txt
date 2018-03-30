@@ -8,18 +8,23 @@ Finished
 -profile
 -mail setup
 -front page 1/2
+categorie in dash
+-product page
+-notification 1/2
 
 
 To do
-categorie in dash
--offers
+
 -front page1/2
--product page
+
 -sales
--notification
+-notification 1/2
 -dash home page
     -total sales
     -total users
     -total orders
 
--confirm 18 page
+-confirm 18 page //planned
+
+dumped
+-offers --x

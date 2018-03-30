@@ -29,7 +29,7 @@
                                 <td>{{product.times}}</td>
                                 <td>
                                     <button class="btn" title="Remove from cart"
-                                            @click="deleteFromCart(product.id,product.name)">x
+                                            @click="deleteFromCart(product.id,product.name)"><i class="fa fa-trash"></i>
                                     </button>
                                 </td>
                             </tr>
