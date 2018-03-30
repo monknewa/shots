@@ -7,7 +7,7 @@
         <ul class="product_list grid row">
 
             <li v-for="product in products" class=" ajax_block_product  col-xs-12   col-sm-6    col-md-4">
-                <div class="product-container">
+                <div class="product-container" style="height: ;">
                     <div class="left-block">
                         <div class="product-image-container">
                             <div class="products-inner">
@@ -18,7 +18,7 @@
                                          :src="product.image"
                                          :alt="product.name"
                                          :title="product.name"
-                                         width="400" height="519" itemprop="image">
+                                         style="height: 300px;">
                                 </a>
 
                             </div>
@@ -32,9 +32,7 @@
                                     {{product.name}}
                                 </a>
                             </h5>
-                            <p class="product-desc" itemprop="description">
-                                {{product.description}}
-                            </p>
+
                             <div class="price-box">
 								<span class="price product-price">
 									<i class="fa fa-rupee"></i>	{{product.price}}</span>
@@ -44,11 +42,12 @@
 
                                     <ul class="add-to-links">
                                         <li class="cart1">
-                                            <a class="button ajax_add_to_cart_button btn btn-default"
-                                               :href="'/product/'+ product.id"
-                                                title="Add to cart" data-id-product="1">
-                                                <span>Add to cart</span>
+
+                                            <a @click="addToCart(product.id,product.name,product.price)"
+                                               class="button ajax_add_to_cart_button btn btn-default"
+                                               title="Add to cart" data-id-product="1">
                                             </a>
+
                                         </li>
                                     </ul>
                                 </div>
@@ -95,17 +94,16 @@
                 products: [],
                 pagination: {},
                 min: '', max: '',
-                path:Laravel.path,
+                path: Laravel.path,
                 basename: Laravel.basename
             }
         },
-        created() {
+        mounted() {
             this.fetchProducts();
         },
         methods: {
-
             fetchProducts(page_url) {
-                page_url = page_url || '/ajax/'+this.path;
+                page_url = page_url || '/ajax/' + this.path;
 
                 axios.post(page_url)
                     .then(res => {
@@ -122,7 +120,49 @@
                 }
                 this.pagination = pagination;
             },
+            addToCart(id, name, price) { // using parameters to get the data
 
+                var productToCart = {
+                    id: id, name: name, price: price, times: 1
+                }; //get item from DOM
+
+                var arrayOfProducts = [productToCart]; // add the item to array <init>
+
+                if (localStorage.getItem('cart') === null) { //if there is no localstorage initialized, we create 'cart' storage
+                    localStorage.setItem('cart', JSON.stringify(arrayOfProducts)); // convert to JSON and store in localstorage
+                    alert(productToCart.name + ' has been added to cart');
+                } else {
+                    // if localStorage exists
+                    var localProduct = JSON.parse(localStorage.getItem('cart'));
+
+                    if (this.checkExists(productToCart)) { // checking  if items exists in the localstorage
+                        //if exists  we  update its times attribute by +1
+                        for (var x in localProduct) {
+                            if (localProduct[x].id === productToCart.id) {
+                                localProduct[x].times += 1;
+                            }
+                        }
+                        localStorage.setItem('cart', JSON.stringify(localProduct)); // and set the data to the localStorage
+
+                        alert(productToCart.name + ' \'s quantity has been updated');
+                    } else {
+                        // if the value doesnot exist we simply add it to the localStorage
+                        localProduct.push(productToCart);
+                        localStorage.setItem('cart', JSON.stringify(localProduct));
+
+                        alert(productToCart.name + ' has been added to cart');
+                    }
+
+                }
+
+            },
+            checkExists(product) { // checking if selected item exists in the  localStorage
+                var localcart = JSON.parse(localStorage.getItem('cart'));
+                for (var x in localcart) {
+                    if (localcart[x].id === product.id)
+                        return true
+                }
+            }
         }
     }
 </script>

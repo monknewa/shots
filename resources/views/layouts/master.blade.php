@@ -15,7 +15,7 @@
             'csrfToken': "{{csrf_token()}}"
         }</script>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/themes/pos_fobe1/css/global.css" type="text/css" media="all">
     <link rel="stylesheet" href="/themes/pos_fobe1/css/autoload/highdpi.css" type="text/css" media="all">
     <link rel="stylesheet" href="/themes/pos_fobe1/css/autoload/responsive-tables.css" type="text/css" media="all">
@@ -57,6 +57,9 @@
           type="text/css" media="all">
     <link rel="stylesheet" href="/themes/pos_fobe1/css/modules/posbestsellers/css/posbestsellers.css" type="text/css"
           media="all">
+
+    <link rel="stylesheet" href="/css/style.css">
+
     <script type="text/javascript" src="/js/jquery/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="/js/jquery/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="/js/jquery/plugins/jquery.easing.js"></script>
@@ -66,8 +69,7 @@
     <script type="text/javascript" src="/themes/pos_fobe1/js/autoload/15-jquery.total-storage.min.js"></script>
     <script type="text/javascript" src="/themes/pos_fobe1/js/autoload/15-jquery.uniform-modified.js"></script>
     <script type="text/javascript" src="/js/jquery/plugins/fancybox/jquery.fancybox.js"></script>
-    <script type="text/javascript" src="/themes/pos_fobe1/js/products-comparison.js"></script>
-    <script type="text/javascript" src="/themes/pos_fobe1/js/modules/blockcart/ajax-cart.js"></script>
+
     <script type="text/javascript" src="/js/jquery/plugins/jquery.scrollTo.js"></script>
     <script type="text/javascript" src="/js/jquery/plugins/jquery.serialScroll.js"></script>
     <script type="text/javascript" src="/js/jquery/plugins/bxslider/jquery.bxslider.js"></script>
@@ -79,7 +81,6 @@
     <script type="text/javascript" src="/modules/posslideshow/js/nivo-slider/jquery.nivo.slider.pack.js"></script>
     <script type="text/javascript" src="/modules/posscroll/scrolltop.js"></script>
     <script type="text/javascript" src="/modules/poscountdown/js/jquery.plugin.js"></script>
-    <script type="text/javascript" src="/modules/poscountdown/js/jquery.countdown.js"></script>
     <script type="text/javascript" src="/modules/posmegamenu/js/custommenu.js"></script>
     <script type="text/javascript" src="/modules/posmegamenu/js/mobile_menu.js"></script>
     <script type="text/javascript" src="/modules/posnewproduct/js/pos.bxslider.min.js"></script>
@@ -90,7 +91,7 @@
           rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Cabin:400,400italic,500,500italic,600,600italic,700,700italic"
           rel="stylesheet" type="text/css">
-{{--    <style type="text/css">
+    <style type="text/css">
         h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, a {
             font-family: Source Sans Pro;
         }
@@ -103,7 +104,7 @@
         .linkFont {
             font-family: Cabin !important;
         }
-    </style>--}}
+    </style>
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,600&amp;subset=latin,latin-ext"
           type="text/css" media="all">
     <!--[if IE 8]>
@@ -114,6 +115,8 @@
     <style type="text/css">.fancybox-margin {
             margin-right: 17px;
         }</style>
+
+
 </head>
 <body>
 
@@ -131,6 +134,10 @@
   <div class="footer-container">
       @include("layouts.footer")
   </div>
+   <script src="{{asset("js/app.js")}}"></script>
+   <script src="{{asset("js/cart.js")}}"></script>
+
+   @yield("script")
 
 </div>
 </body>

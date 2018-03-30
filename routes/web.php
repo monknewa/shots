@@ -60,6 +60,8 @@ Route::put("/profile/user/{user}", "UserController@update");
 Route::get("/products/", "PagesController@products");
 Route::get("/products/{product}", "PagesController@products");
 
+Route::get("/checkout","PagesController@checkOut");
+
 Route::group(['prefix'=>'/ajax'], function(){
     Route::post("/products","ProductController@ajaxProducts");
     Route::post("/category","CategoryController@ajaxCategory");

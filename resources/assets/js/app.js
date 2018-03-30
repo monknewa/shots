@@ -18,7 +18,16 @@ window.Vue = require('vue');
 Vue.component('products', require('./components/products/Products'));
 Vue.component('categories', require('./components/products/Category'));
 Vue.component('slider', require('./components/products/slider'));
+Vue.component('header-cart', require('./components/products/headerCart'));
+
+const app1 = new Vue({
+    el: '#app1',
+    components:{
+        'header-cart': require('./components/products/headerCart')
+    }
+});
 
 const app = new Vue({
     el: '#app'
 });
+

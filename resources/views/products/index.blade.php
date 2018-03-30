@@ -8,7 +8,6 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/11.0.3/nouislider.css">
 
-
     <div class="pos_breadcrumb" style="background: #f3f3f3">
         <div class="container">
 
@@ -72,8 +71,9 @@
         </div>
     </div>
 
+@endsection
 
-    <script src="{{asset("js/app.js")}}"></script>
+@section("script")
     <script>
         var slider = document.getElementById("uislider");
 

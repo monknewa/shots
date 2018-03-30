@@ -40,7 +40,7 @@ class ProductController extends Controller
 
         $file = $request->file("image");
         $fileExtension = $file->getClientOriginalExtension();
-        $file->move(public_path("img/products/"), $request->name . ".$fileExtension");
+        $file->move(public_path("/img/products/"), $request->name . ".$fileExtension");
 
         Product::create([
             'name' => $request->name,
@@ -100,7 +100,7 @@ class ProductController extends Controller
                 'price' => $request->price,
                 'category_id' => $request->category_id,
                 'quantity' => $request->quantity,
-                'image' => "img/products/" . $request->name . "." . $file->getClientOriginalExtension(),
+                'image' => "/img/products/" . $request->name . "." . $file->getClientOriginalExtension(),
                 'description' => $request->description,
             ];
         } else {
@@ -115,7 +115,7 @@ class ProductController extends Controller
                 'category_id' => $request->category_id,
                 'quantity' => $request->quantity,
                 'description' => $request->description,
-                'image' => "img/products/" . $request->name . "." . $extension,
+                'image' => "/img/products/" . $request->name . "." . $extension,
             ];
         }
         $product->update($fields);
@@ -144,14 +144,14 @@ class ProductController extends Controller
 
     public function ajaxProducts()
     {
-        $products = Product::latest()->paginate(5);
+        $products = Product::latest()->paginate(6);
         return response()->json($products);
     }
 
     public function ajaxProductCategory($category)
     {
         $category = Category::where("type",$category)->firstOrFail();
-        $products = Product::where("category_id",$category->id)->latest()->paginate(5);
+        $products = Product::where("category_id",$category->id)->latest()->paginate(6);
         return response()->json($products);
     }
 }
