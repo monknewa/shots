@@ -10,21 +10,15 @@ Finished
 -front page 1/2
 categorie in dash
 -product page
--notification 1/2
-
-
-To do
-
--front page1/2
-
--sales
--notification 1/2
+-notification
 -dash home page
     -total sales
     -total users
     -total orders
+-sales
 
--confirm 18 page //planned
+To do
+-front page1/2
+-confirm 18 page //dropped
 
-dumped
--offers --x
+

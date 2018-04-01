@@ -2,8 +2,10 @@
 
 namespace App;
 
+use App\Mail\OrderConfirmed;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
 
 class Order extends Model
 {
@@ -57,5 +59,7 @@ class Order extends Model
         }
         $order->total = $finalTotal;
         $order->update();
+
+        Mail::to(auth()->user()->email)->send(new OrderConfirmed());
     }
 }

@@ -63,9 +63,6 @@ Route::get("/checkout/address","PagesController@checkOutAddress")->middleware("a
 
 Route::post("/checkout","PagesController@purchase");
 
-Route::get("/test",function (){
-    return view("test");
-});
 
 
 
