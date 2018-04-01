@@ -13,8 +13,9 @@
                                         My account
                                     </a></li>
                                 </li>
+                                <li><a class="link-checkout" href="/checkout" title="checkout">Checkout</a></li>
 
-                                <li class="first"> <a class="login" href="/logout" rel="nofollow"
+                                <li class="first"> <a class="login" href="/logout" rel="nofollow" onclick="localStorage.clear()"
                                         title="Log in to your customer account">
                                         Log out
                                     </a></li>
@@ -25,7 +26,6 @@
                             </div>
                             <ul id="header_links" class=" vertical-link header_links_ul toogle_content">
 
-                                <li><a class="link-checkout" href="order.html" title="checkout">Checkout</a></li>
                                 <li>
                                     <a class="login" href="/login" rel="nofollow"
                                        title="Log in to your customer account">

@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\DB;
 
 class Order extends Model
 {
-    protected $fillable = ['user_id'];
+    protected $fillable = ['user_id', 'delivery_address'];
 
     public function products()
     {
@@ -23,30 +23,39 @@ class Order extends Model
     }
 
     /**
-    *@param $products
+     * @param $products
      *is an array of Product: class
      *
      * @param $request
      * request from the controller
      * contains the quantity of the product
      */
-    public static function addOrder($request, $products)
+    public static function addOrder($request)
     {
         // takes request which sends the quantity of the product
         $order = Order::create([
-            'user_id' => auth()->id()
+            'user_id' => auth()->id(),
+            'delivery_address' => $request['location']
         ]);
-
-        foreach ($products as $product) {
+        $finalTotal = 0;
+        foreach ($request['products'] as $product) {
             // to store order for every product
-            $total = $product->price * $request->quantity;
+            $item = Product::find($product['id']);
+            $total = $item->price * $product['times'];
+
+            $item->update([
+                'quantity' => $item->quantity - $product['times']
+            ]);
 
             DB::table("orders_products")->insert([
-                'product_id' => $product->id,
+                'product_id' => $item->id,
                 'order_id' => $order->id,
-                'quantity' => $request->quantity,
+                'quantity' => $product['times'],
                 'total' => $total
             ]);
+            $finalTotal += $total;
         }
+        $order->total = $finalTotal;
+        $order->update();
     }
 }

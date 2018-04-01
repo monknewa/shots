@@ -55,5 +55,4 @@ if (token) {
 //     encrypted: true
 // });
 
-window.noUiSlider = require('nouislider');
 

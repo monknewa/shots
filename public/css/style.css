@@ -7,4 +7,8 @@
     border: 1px solid black;
 }
 
-
+.cart_overlay #checkout_button {
+    background-color: #000;
+    float: right;
+    color: #fff;
+}

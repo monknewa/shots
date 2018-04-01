@@ -6,7 +6,7 @@
         <header>
             <h3 class="display"><strong> {{isset($product)?"Edit":"Add "}} Items</strong></h3>
             <div>
-                <a href="/dash/item"><h4 class="text-primary"><i class="fa fa-backward"></i> Back</h4></a>
+                <a href="/dash/products"><h4 class="text-primary"><i class="fa fa-backward"></i> Back</h4></a>
             </div>
         </header>
         <div class="row">

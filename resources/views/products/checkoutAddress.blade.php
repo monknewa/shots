@@ -29,62 +29,36 @@
                 </h1>
                 <!-- Steps -->
                 <ul class="step clearfix" id="order_step">
-                    <li class="step_current  first">
+                    <li class="step_todo  first">
                         <span><em>01.</em> Summary</span>
                     </li>
-                    <li class="step_todo third">
+                    <li class="step_current third">
                         <span><em>02.</em> Address</span>
                     </li>
 
                 </ul>
                 <!-- /Steps -->
-                <div id="order-detail-content" class="table_block table-responsive">
-                    <table id="cart_summary" class="table table-bordered stock-management-on">
-                        <thead>
-                        <tr>
-                            <th class="cart_product first_item">Product</th>
-                            <th class="cart_description item">Description</th>
-                            <th class="cart_unit item text-right">Unit price</th>
-                            <th class="cart_quantity item text-center">Qty</th>
-                            <th class="cart_delete last_item">&nbsp;</th>
-                            <th class="cart_total item text-right">Total</th>
-                        </tr>
-                        </thead>
-                        <tbody id="checkOutTbody">
-                        </tbody>
-                        <tfoot>
+                <div class="row" style="margin:100px 0px">
+                    <div class="col-xs-12 col-sm-6">
 
-                        <tr class="cart_total_price">
-                            <td rowspan="3" colspan="2" id="cart_voucher" class="cart_voucher">
-                            </td>
-                            <td colspan="3" class="text-right">Total products (tax incl.)</td>
-                            <td colspan="2" class="price" id="total_product"></td>
-                        </tr>
-
-                        <tr class="cart_total_price">
-                            <td colspan="3" class="total_price_container text-right">
-                                <span>Total</span>
-                                <div class="hookDisplayProductPriceBlock-price">
-
-                                </div>
-                            </td>
-                            <td colspan="2" class="price" id="total_price_container">
-                                <span id="total_price">£ 196.26</span>
-                            </td>
-                        </tr>
-
-                        </tfoot>
-
-
-                    </table>
-                </div> <!-- end order-detail-content -->
+                        <h3 class="page-subheading">Delivery Address</h3>
+                        <div class="form_content clearfix">
+                            <div class="form-group">
+                                <label for="email">Delivery Address</label>
+                                <input class="form-control"
+                                       type="text" id="checkout_address" value="">
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end order-detail-content -->
 
                 <div id="HOOK_SHOPPING_CART"></div>
                 <p class="cart_navigation clearfix">
-                    <a href="/checkout/address"
+                    <a {{--href="/checkout/shipping"--}}
                        id="purchase"
+                       onclick="addAddress()"
                        class="button btn btn-default standard-checkout button-medium" title="Proceed to checkout"
-                       style="">
+                       style="display: none">
                         <span>Proceed to checkout<i class="icon-chevron-right right"></i></span>
                     </a>
                     <a href="/products"
@@ -99,13 +73,23 @@
 
             </div><!-- #center_column -->
         </div><!-- .row -->
-
     </div>
-
 @endsection
 
 @section("script")
     <script>
-        checkOutRows();
+
+        if (localStorage.getItem('cart') === null) {
+            document.getElementById("purchase").style.display = "none";
+        } else {
+            document.getElementById("purchase").style.display = "block";
+        }
+        var localS = JSON.parse(localStorage.getItem("cart"));
+        if (localS.length === 0) {
+            document.getElementById("purchase").style.display = "none";
+        } else {
+            document.getElementById("purchase").style.display = "block";
+        }
+
     </script>
 @endsection

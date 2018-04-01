@@ -8,10 +8,7 @@
                 <div class="pos-loading" style="display: none;"></div>
 
                 <div id="pos-slideshow-home" class="slides ">
-
                     <img src="/img/blockslideshow/1.jpg" data-thumb="/img/blockslideshow/1.jpg" alt=""/>
-                    {{--<img src="/img/blockslideshow/2.jpg" data-thumb="/img/blockslideshow/2.jpg" alt=""/>--}}
-
                 </div>
             </div>
         </div>
@@ -21,7 +18,7 @@
             <div class="container">
                 <div class="row">
                     <div class=" col-md-8 col-sm-8 col-xs-12">
-                        <div class="banner-box"><a href="#"><img src="/img/cms/1_1.jpg" alt=""></a></div>
+                        <div class="banner-box"><a href="#" data-lightbox="image-1"><img src="/img/cms/1_1.jpg" alt=""></a></div>
                     </div>
                     <div class=" col-md-4 col-sm-4 col-xs-12">
                         <div class="banner-box"><a href="#"><img src="/img/cms/2_1.jpg" alt=""></a></div>
@@ -51,18 +48,17 @@
                                             <div class="item-product">
 
                                                 <div class="products-inner">
-                                                    <a href="wine-basics/5-printed-summer-dress.html" title=""
+                                                    <a href="#" title=""
                                                        class="content_img clearfix">
                                                         <img src="../40-home_default/printed-summer-dress.jpg"
                                                              class="img-responsive" alt="">
-
                                                     </a>
 
                                                 </div>
                                                 <div class="product-contents">
 
                                                     <h5 class="product-name">
-                                                        <a href="wine-basics/5-printed-summer-d ress.html" title="">
+                                                        <a href="#" title="">
                                                             Printed Summer Dress<br>
                                                         </a>
                                                     </h5>
@@ -90,7 +86,7 @@
                                                     </p>
                                                     <div class="cart">
                                                         <a class="button ajax_add_to_cart_button btn btn-default"
-                                                           href="order62d3.html?add=1&amp;id_product=5&amp;token=ee8d95543658ede5e0b91c40edb8d5b6"
+                                                           href="/products/"
                                                            rel="nofollow" title="Add to cart" data-id-product="5">
                                                             <span>Add to cart</span>
 
@@ -107,51 +103,20 @@
                                             <div class="item-product">
 
                                                 <div class="products-inner">
-                                                    <a href="wine-basics/10-printed-summer-dress.html" title=""
+                                                    <a href="#" title=""
                                                        class="content_img clearfix">
                                                         <img src="../65-home_default/printed-summer-dress.jpg"
                                                              class="img-responsive" alt="">
 
                                                     </a>
-                                                    <!-- 								<a class="new-box" href="http://demo.posthemes.com/pos_fobe/en/wine-basics/10-printed-summer-dress.html">
-                                                            <span class="new-label">New</span>
-                                                        </a>
-                                                                                 -->
 
                                                 </div>
                                                 <div class="product-contents">
                                                     <div class="countdown">
 
-                                                        <script>
-                                                            $(document).ready(function () {
-                                                                $('#future_date_12_10').countdown({
-                                                                    until: new Date(2036, 03 - 1, 11, 00, 00, 00),
-                                                                    labels: ['Years', 'Months', 'Weeks', 'Days', 'Hrs', 'Mins', 'Secs'],
-                                                                    labels1: ['Year', 'Month', 'Week', 'Day', 'Hour', 'Minute', 'Second'],
-
-                                                                });
-                                                            });
-                                                        </script>
-
-                                                        <span id="future_date_12_10" data-time="
-								   2036 ,03-1 ,11,00, 00, 00" class="id_countdown is-countdown"><span
-                                                                    class="countdown-row countdown-show4"><span
-                                                                        class="countdown-section"><span
-                                                                            class="countdown-amount">6565</span><span
-                                                                            class="countdown-period">Days</span></span><span
-                                                                        class="countdown-section"><span
-                                                                            class="countdown-amount">0</span><span
-                                                                            class="countdown-period">Hrs</span></span><span
-                                                                        class="countdown-section"><span
-                                                                            class="countdown-amount">12</span><span
-                                                                            class="countdown-period">Mins</span></span><span
-                                                                        class="countdown-section"><span
-                                                                            class="countdown-amount">32</span><span
-                                                                            class="countdown-period">Secs</span></span></span></span>
-
                                                     </div>
                                                     <h5 class="product-name">
-                                                        <a href="wine-basics/10-printed-summer-dress.html" title="">
+                                                        <a href="#" title="">
                                                             Printed Summer Dress<br>
                                                         </a>
                                                     </h5>
@@ -174,11 +139,11 @@
                                                         <div itemtype="http://schema.org/AggregateRating" itemscope=""
                                                              itemprop="aggregateRating" class="comments_note">
                                                             <div class="star_content clearfix">
-                                                                <div class="star "></div>
-                                                                <div class="star "></div>
-                                                                <div class="star "></div>
-                                                                <div class="star"></div>
-                                                                <div class="star "></div>
+                                                                <div class=" "></div>
+                                                                <div class=" "></div>
+                                                                <div class=" "></div>
+                                                                <div class=""></div>
+                                                                <div class=" "></div>
                                                             </div>
                                                         </div>
 
@@ -189,206 +154,8 @@
                                                     </p>
                                                     <div class="cart">
                                                         <a class="button ajax_add_to_cart_button btn btn-default"
-                                                           href="ordera5cc.html?add=1&amp;id_product=10&amp;token=ee8d95543658ede5e0b91c40edb8d5b6"
+                                                           href="/products/"
                                                            rel="nofollow" title="Add to cart" data-id-product="10">
-                                                            <span>Add to cart</span>
-
-                                                        </a>
-
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item" style="width: 300px;">
-                                        <div class="item-special">
-                                            <div class="item-product">
-
-                                                <div class="products-inner">
-                                                    <a href="wine-basics/12-printed-chiffon-dress.html" title=""
-                                                       class="content_img clearfix">
-                                                        <img src="../64-home_default/printed-chiffon-dress.jpg"
-                                                             class="img-responsive" alt="">
-
-                                                    </a>
-                                                    <!-- 								<a class="new-box" href="http://demo.posthemes.com/pos_fobe/en/wine-basics/12-printed-chiffon-dress.html">
-                                                            <span class="new-label">New</span>
-                                                        </a>
-                                                                                 -->
-
-                                                </div>
-                                                <div class="product-contents">
-                                                    <div class="countdown">
-
-                                                        <script>
-                                                            $(document).ready(function () {
-                                                                $('#future_date_12_12').countdown({
-                                                                    until: new Date(2036, 03 - 1, 11, 00, 00, 00),
-                                                                    labels: ['Years', 'Months', 'Weeks', 'Days', 'Hrs', 'Mins', 'Secs'],
-                                                                    labels1: ['Year', 'Month', 'Week', 'Day', 'Hour', 'Minute', 'Second'],
-
-                                                                });
-                                                            });
-                                                        </script>
-
-                                                        <span id="future_date_12_12" data-time="
-								   2036 ,03-1 ,11,00, 00, 00" class="id_countdown is-countdown"><span
-                                                                    class="countdown-row countdown-show4"><span
-                                                                        class="countdown-section"><span
-                                                                            class="countdown-amount">6565</span><span
-                                                                            class="countdown-period">Days</span></span><span
-                                                                        class="countdown-section"><span
-                                                                            class="countdown-amount">0</span><span
-                                                                            class="countdown-period">Hrs</span></span><span
-                                                                        class="countdown-section"><span
-                                                                            class="countdown-amount">12</span><span
-                                                                            class="countdown-period">Mins</span></span><span
-                                                                        class="countdown-section"><span
-                                                                            class="countdown-amount">32</span><span
-                                                                            class="countdown-period">Secs</span></span></span></span>
-
-                                                    </div>
-                                                    <h5 class="product-name">
-                                                        <a href="wine-basics/12-printed-chiffon-dress.html" title="">
-                                                            Printed Chiffon Dress<br>
-                                                        </a>
-                                                    </h5>
-
-
-                                                    <div class="price-box">
-
-									<span class="price product-price">
-										£ 19.68									</span>
-
-                                                        <span class="old-price product-price">
-											£ 24.60
-										</span>
-
-                                                        <span class="price-percent-reduction">-20%</span>
-
-
-                                                    </div>
-                                                    <div class="hook-reviews">
-                                                        <div itemtype="http://schema.org/AggregateRating" itemscope=""
-                                                             itemprop="aggregateRating" class="comments_note">
-                                                            <div class="star_content clearfix">
-                                                                <div class="star "></div>
-                                                                <div class="star "></div>
-                                                                <div class="star "></div>
-                                                                <div class="star"></div>
-                                                                <div class="star "></div>
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-                                                    <p class="product-desc" itemprop="description">
-                                                        Printed chiffon knee length dress with tank straps. Deep
-                                                        v-neckline.
-                                                    </p>
-                                                    <div class="cart">
-                                                        <a class="button ajax_add_to_cart_button btn btn-default"
-                                                           href="order9543.html?add=1&amp;id_product=12&amp;token=ee8d95543658ede5e0b91c40edb8d5b6"
-                                                           rel="nofollow" title="Add to cart" data-id-product="12">
-                                                            <span>Add to cart</span>
-
-                                                        </a>
-
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item" style="width: 300px;">
-                                        <div class="item-special">
-                                            <div class="item-product">
-
-                                                <div class="products-inner">
-                                                    <a href="wine-basics/7-printed-chiffon-dress.html" title=""
-                                                       class="content_img clearfix">
-                                                        <img src="../48-home_default/printed-chiffon-dress.jpg"
-                                                             class="img-responsive" alt="">
-
-                                                    </a>
-                                                    <!-- 								<a class="new-box" href="http://demo.posthemes.com/pos_fobe/en/wine-basics/7-printed-chiffon-dress.html">
-                                                            <span class="new-label">New</span>
-                                                        </a>
-                                                                                 -->
-
-                                                </div>
-                                                <div class="product-contents">
-                                                    <div class="countdown">
-
-                                                        <script>
-                                                            $(document).ready(function () {
-                                                                $('#future_date_12_7').countdown({
-                                                                    until: new Date(2036, 03 - 1, 11, 00, 00, 00),
-                                                                    labels: ['Years', 'Months', 'Weeks', 'Days', 'Hrs', 'Mins', 'Secs'],
-                                                                    labels1: ['Year', 'Month', 'Week', 'Day', 'Hour', 'Minute', 'Second'],
-
-                                                                });
-                                                            });
-                                                        </script>
-
-                                                        <span id="future_date_12_7" data-time="
-								   2036 ,03-1 ,11,00, 00, 00" class="id_countdown is-countdown"><span
-                                                                    class="countdown-row countdown-show4"><span
-                                                                        class="countdown-section"><span
-                                                                            class="countdown-amount">6565</span><span
-                                                                            class="countdown-period">Days</span></span><span
-                                                                        class="countdown-section"><span
-                                                                            class="countdown-amount">0</span><span
-                                                                            class="countdown-period">Hrs</span></span><span
-                                                                        class="countdown-section"><span
-                                                                            class="countdown-amount">12</span><span
-                                                                            class="countdown-period">Mins</span></span><span
-                                                                        class="countdown-section"><span
-                                                                            class="countdown-amount">32</span><span
-                                                                            class="countdown-period">Secs</span></span></span></span>
-
-                                                    </div>
-                                                    <h5 class="product-name">
-                                                        <a href="wine-basics/7-printed-chiffon-dress.html" title="">
-                                                            Printed Chiffon Dress<br>
-                                                        </a>
-                                                    </h5>
-
-
-                                                    <div class="price-box">
-
-									<span class="price product-price">
-										£ 19.68									</span>
-
-                                                        <span class="old-price product-price">
-											£ 24.60
-										</span>
-
-                                                        <span class="price-percent-reduction">-20%</span>
-
-
-                                                    </div>
-                                                    <div class="hook-reviews">
-                                                        <div itemtype="http://schema.org/AggregateRating" itemscope=""
-                                                             itemprop="aggregateRating" class="comments_note">
-                                                            <div class="star_content clearfix">
-                                                                <div class="star "></div>
-                                                                <div class="star "></div>
-                                                                <div class="star "></div>
-                                                                <div class="star"></div>
-                                                                <div class="star "></div>
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-                                                    <p class="product-desc" itemprop="description">
-                                                        Printed chiffon knee length dress with tank straps. Deep
-                                                        v-neckline.
-                                                    </p>
-                                                    <div class="cart">
-                                                        <a class="button ajax_add_to_cart_button btn btn-default"
-                                                           href="order0f19.html?add=1&amp;id_product=7&amp;token=ee8d95543658ede5e0b91c40edb8d5b6"
-                                                           rel="nofollow" title="Add to cart" data-id-product="7">
                                                             <span>Add to cart</span>
 
                                                         </a>
@@ -406,30 +173,7 @@
                     </div>
                 </div>
             </div>
-            <script>
-                $(document).ready(function () {
 
-                    var owl = $("#pos-special-products");
-
-                    owl.owlCarousel({
-                        autoPlay: false,
-                        pagination: false,
-                        items: 1,
-                        slideSpeed: 1000,
-                        itemsDesktop: [1199, 1],
-                        itemsDesktopSmall: [991, 1],
-                        itemsTablet: [767, 1],
-                        itemsMobile: [480, 1]
-                    });
-                    // Custom Navigation Events
-                    $(".nextspecial").click(function () {
-                        owl.trigger('owl.next');
-                    })
-                    $(".prevspecial").click(function () {
-                        owl.trigger('owl.prev');
-                    })
-                });
-            </script>
             <div class="col-lg-5  col-md-4 col-sm-6 col-xs-12">
                 <div class="banner-home"><a href="#"><img src="/img/cms/3_1.jpg" alt=""></a></div>
             </div>
@@ -452,7 +196,7 @@
                                             @for($i = 0 ; $i < 2;$i++)
                                                 <div class="item-product">
                                                     <div class="products-inner">
-                                                        <a href="/product/{{$products[$i]->name}}l" title="">
+                                                        <a href="{{$products[$i]->image}}" data-lightbox="product">
                                                             <img src="{{$products[$i]->image}}" alt="">
                                                         </a>
                                                     </div>
@@ -493,7 +237,7 @@
                                                                 <ul class="add-to-links">
                                                                     <li class="cart">
                                                                         <a class="button ajax_add_to_cart_button btn btn-default"
-                                                                           onclick="addToCart('{{$products[$i]->id}}','{{$products[$i]->name}}','{{$products[$i]->price}}')"
+                                                                           onclick="addToCart({{$products[$i]->toJson()}})"
                                                                            rel="nofollow" title="Add to cart"
                                                                            data-id-product="2">
                                                                             <span>Add to cart</span>
@@ -510,219 +254,16 @@
 
                                         </div>
                                     </div>
-                                    <div class="owl-item" style="width: 370px;">
-                                        <div class="item clearfix">
-                                            <div class="item-product">
-                                                <div class="products-inner">
-                                                    <a href="wine-basics/1-faded-short-sleeves-tshirt.html" title="">
-                                                        <img src="../24-home_default/faded-short-sleeves-tshirt.jpg"
-                                                             alt="">
-
-                                                    </a>
-                                                    <!-- 											<a class="new-box" href="http://demo.posthemes.com/pos_fobe/en/wine-basics/1-faded-short-sleeves-tshirt.html">
-                                                                    <span class="new-label">New</span>
-                                                                </a>
-                                                                                             -->
-
-
-                                                </div>
-                                                <div class="product-contents">
-
-                                                    <h5 class="product-name">
-                                                        <a href="wine-basics/1-faded-short-sleeves-tshirt.html"
-                                                           title="">
-                                                            Faded Short Sleeves T-shirt<br>
-                                                        </a>
-                                                    </h5>
-
-                                                    <div class="hook-reviews">
-                                                        <div itemtype="http://schema.org/AggregateRating" itemscope=""
-                                                             itemprop="aggregateRating" class="comments_note">
-                                                            <div class="star_content clearfix">
-                                                                <div class="star "></div>
-                                                                <div class="star "></div>
-                                                                <div class="star "></div>
-                                                                <div class="star"></div>
-                                                                <div class="star "></div>
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-                                                    <div class="price-box">
-
-										<span class="price product-price">
-											£ 19.81										</span>
-
-
-                                                    </div>
-                                                    <p class="product-desc" itemprop="description">
-                                                        Faded short sleeves t-shirt with high neckline. Soft and
-                                                        stretchy material...
-                                                    </p>
-                                                    <div class="actions">
-
-                                                        <div class="actions-inner">
-
-                                                            <ul class="add-to-links">
-                                                                <li class="cart">
-                                                                    <a class="button ajax_add_to_cart_button btn btn-default"
-                                                                       href="order7a0f.html?add=1&amp;id_product=1&amp;token=ee8d95543658ede5e0b91c40edb8d5b6"
-                                                                       rel="nofollow" title="Add to cart"
-                                                                       data-id-product="1">
-                                                                        <span>Add to cart</span>
-
-                                                                    </a>
-
-                                                                </li>
-                                                                <li>
-                                                                    <a class="addToWishlist wishlistProd_1" href="#"
-                                                                       data-wishlist="1" title="Add to Wishlist"
-                                                                       onclick="WishlistCart('wishlist_block_list', 'add', '1', false, 1); return false;">
-                                                                        <span>Wishlist</span>
-
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a class="add_to_compare"
-                                                                       href="wine-basics/1-faded-short-sleeves-tshirt.html"
-                                                                       data-id-product="1" title="Add to Compare">Compare
-
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a class="quick-view" title="Quick view"
-                                                                       href="wine-basics/1-faded-short-sleeves-tshirt.html">
-
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                            <div class="item-product">
-                                                <div class="products-inner">
-                                                    <a href="wine-basics/8-printed-dress.html" title="">
-                                                        <img src="../52-home_default/printed-dress.jpg" alt="">
-
-                                                    </a>
-                                                    <!-- 											<a class="new-box" href="http://demo.posthemes.com/pos_fobe/en/wine-basics/8-printed-dress.html">
-                                                                    <span class="new-label">New</span>
-                                                                </a>
-                                                                                             -->
-
-
-                                                </div>
-                                                <div class="product-contents">
-
-                                                    <h5 class="product-name">
-                                                        <a href="wine-basics/8-printed-dress.html" title="">
-                                                            Printed Dress<br>
-                                                        </a>
-                                                    </h5>
-
-                                                    <div class="hook-reviews">
-                                                        <div itemtype="http://schema.org/AggregateRating" itemscope=""
-                                                             itemprop="aggregateRating" class="comments_note">
-                                                            <div class="star_content clearfix">
-                                                                <div class="star "></div>
-                                                                <div class="star "></div>
-                                                                <div class="star "></div>
-                                                                <div class="star"></div>
-                                                                <div class="star "></div>
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-                                                    <div class="price-box">
-
-										<span class="price product-price">
-											£ 31.20										</span>
-
-
-                                                    </div>
-                                                    <p class="product-desc" itemprop="description">
-                                                        100% cotton double printed dress. Black and white striped top
-                                                        and orange high...
-                                                    </p>
-                                                    <div class="actions">
-
-                                                        <div class="actions-inner">
-
-                                                            <ul class="add-to-links">
-                                                                <li class="cart">
-                                                                    <a class="button ajax_add_to_cart_button btn btn-default"
-                                                                       href="orderc4c4.html?add=1&amp;id_product=8&amp;token=ee8d95543658ede5e0b91c40edb8d5b6"
-                                                                       rel="nofollow" title="Add to cart"
-                                                                       data-id-product="8">
-                                                                        <span>Add to cart</span>
-
-                                                                    </a>
-
-                                                                </li>
-                                                                <li>
-                                                                    <a class="addToWishlist wishlistProd_8" href="#"
-                                                                       data-wishlist="8" title="Add to Wishlist"
-                                                                       onclick="WishlistCart('wishlist_block_list', 'add', '8', false, 1); return false;">
-                                                                        <span>Wishlist</span>
-
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a class="add_to_compare"
-                                                                       href="wine-basics/8-printed-dress.html"
-                                                                       data-id-product="8" title="Add to Compare">Compare
-
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a class="quick-view" title="Quick view"
-                                                                       href="wine-basics/8-printed-dress.html">
-
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
+                                    <div class="clearfix"></div>
                                 </div>
                             </div>
 
+                        </div>
 
-                        </div>
-                        <div class="boxprevnext">
-                            <a class="prev prevsellers"><i class="icon-long-arrow-left"></i></a>
-                            <a class="next nextsellers"><i class="icon-long-arrow-right"></i></a>
-                        </div>
                     </div>
                 </div>
             </div>
-            <script>
-                $(document).ready(function () {
-                    var owl = $(".pos-topsellers");
-                    owl.owlCarousel({
-                        items: 1,
-                        slideSpeed: 1000,
-                        pagination: false,
-                        itemsDesktop: [1199, 1],
-                        itemsDesktopSmall: [991, 2],
-                        itemsTablet: [767, 1],
-                        itemsMobile: [480, 1]
-                    });
-                    $(".nextsellers").click(function () {
-                        owl.trigger('owl.next');
-                    })
-                    $(".prevsellers").click(function () {
-                        owl.trigger('owl.prev');
-                    })
-                });
-            </script>
+
             <!-- /MODULE Block best sellers -->
         </div>
 
@@ -735,17 +276,14 @@
                                     class="last-title">Special Collection</span></h2></div>
                     <p class="desc-title">Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum
                         claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.</p>
-                    <div class="boxprevnext">
-                        <a class="prev prevnewproduct"><i class="icon-long-arrow-left"></i></a>
-                        <a class="next nextnewproduct"><i class="icon-long-arrow-right"></i></a>
-                    </div>
+
                 </div>
                 <div class="col-md-9 col-sm-9 col-xs-12">
                     <div class=" row pos-content">
                         <div class="pos_newproducts  owl-carousel owl-theme" style="display: block; opacity: 1;">
                             <div class="owl-wrapper-outer">
                                 <div class="owl-wrapper" style="width: 7200px; left: 0px; display: block;">
-                                    @foreach($specialCollections as $specialCollection)
+                                    @forelse($specialCollections as $specialCollection)
                                         <div class="owl-item" style="width: 300px;">
                                             <div class="item-feature">
                                                 <div class="item-product">
@@ -757,15 +295,13 @@
                                                             <img class=" img-responsive"
                                                                  src="{{$specialCollection->image}}"
                                                                  style="height:300px"
-                                                                 title="Faded Short Sleeves T-shirt" itemprop="image">
+                                                                 title="{{$specialCollection->name}}" itemprop="image">
                                                         </a>
-                                                        <a class="new-box">
-                                                            <span class="new-label">New</span>
-                                                        </a>
+
                                                     </div>
                                                     <div class="product-contents">
                                                         <h5 class="product-name"><a
-                                                                    href="wine-basics/1-faded-short-sleeves-tshirt.html"
+                                                                    href="/product/{{$specialCollection->name}}"
                                                                     title="{{$specialCollection->name}}">{{$specialCollection->name}}</a>
                                                         </h5>
                                                         <div class="price-box">
@@ -777,7 +313,7 @@
                                                                 <ul class="add-to-links">
                                                                     <li class="cart">
                                                                         <a class="button ajax_add_to_cart_button btn btn-default"
-                                                                           onclick="addToCart('{{$specialCollection->id}}','{{$specialCollection->name}}','{{$specialCollection->price}}')"
+                                                                           onclick="addToCart({{$specialCollection->toJson()}})"
                                                                            rel="nofollow" title="Add to cart"
                                                                            data-id-product="1">
                                                                             <span>Add to cart</span>
@@ -790,7 +326,10 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    @endforeach
+                                    @empty
+                                        no item sorry
+                                    @endforelse
+                                    <div class="clearfix"></div>
 
                                 </div>
                             </div>
@@ -803,30 +342,6 @@
         </div>
     </div>
 
-    <script>
-        $(document).ready(function () {
-
-            var owl = $(".pos_newproducts");
-
-            owl.owlCarousel({
-                autoPlay: false,
-                pagination: false,
-                items: 3,
-                slideSpeed: 1000,
-                itemsDesktop: [1199, 3],
-                itemsDesktopSmall: [991, 2],
-                itemsTablet: [767, 2],
-                itemsMobile: [480, 1]
-            });
-            // Custom Navigation Events
-            $(".nextnewproduct").click(function () {
-                owl.trigger('owl.next');
-            })
-            $(".prevnewproduct").click(function () {
-                owl.trigger('owl.prev');
-            })
-        });
-    </script>
     <div class="container">
         <div class="pos-feature-product">
             <div class="pos-title">
@@ -837,26 +352,24 @@
                 <div class="featureSlide owl-carousel owl-theme" style="display: block; opacity: 1;">
                     <div class="owl-wrapper-outer">
                         <div class="owl-wrapper" style="width: 7200px; left: 0px; display: block;">
-                            @foreach($products as $product)
+                            @forelse($products as $product)
                                 <div class="owl-item" style="width: 300px;">
                                     <div class="item-feature">
                                         <div class="item-product">
 
                                             <div class="products-inner">
                                                 <a class="product_img_link"
-                                                   href="wine-basics/1-faded-short-sleeves-tshirt.html"
+                                                   href="/product/{{$product->name}}"
                                                    title="Faded Short Sleeves T-shirt" itemprop="url">
                                                     <img class=" img-responsive"
                                                          src="{{$product->image}}" style="height:300px"
                                                          title="Faded Short Sleeves T-shirt" itemprop="image">
                                                 </a>
-                                                <a class="new-box">
-                                                    <span class="new-label">New</span>
-                                                </a>
+
                                             </div>
                                             <div class="product-contents">
                                                 <h5 class="product-name"><a
-                                                            href="wine-basics/1-faded-short-sleeves-tshirt.html"
+                                                            href="/product/{{$product->name}}"
                                                             title="{{$product->name}}">{{$product->name}}</a></h5>
                                                 <div class="price-box">
 									<span class="price product-price">
@@ -867,7 +380,7 @@
                                                         <ul class="add-to-links">
                                                             <li class="cart">
                                                                 <a class="button ajax_add_to_cart_button btn btn-default"
-                                                                   onclick="addToCart('{{$product->id}}','{{$product->name}}','{{$product->price}}')"
+                                                                   onclick="addToCart({{$product->toJson()}})"
                                                                    rel="nofollow" title="Add to cart"
                                                                    data-id-product="1">
                                                                     <span>Add to cart</span>
@@ -880,43 +393,19 @@
                                         </div>
                                     </div>
                                 </div>
-                            @endforeach
-
+                            @empty
+                                sorry no item
+                            @endforelse
+                                <div class="clearfix"></div>
                         </div>
                     </div>
                 </div>
-                <div class="boxprevnext">
-                    <a class="prev prevfure"><i class="icon-long-arrow-left"></i></a>
-                    <a class="next nextfure"><i class="icon-long-arrow-right"></i></a>
-                </div>
+
             </div>
         </div>
     </div>
 
-    <script>
-        $(document).ready(function () {
-            var owl = $(".featureSlide");
-            owl.owlCarousel({
-                items: 10,
-                slideSpeed: 1000,
-                pagination: false,
-                itemsDesktop: [1199, 3],
-                itemsDesktopSmall: [991, 3],
-                itemsTablet: [767, 2],
-                itemsMobile: [480, 1],
-                autoPlay: false,
-            });
 
-            // Custom Navigation Events
-            $(".nextfure").click(function () {
-                owl.trigger('owl.next');
-            })
-            $(".prevfure").click(function () {
-                owl.trigger('owl.prev');
-            })
-        });
-
-    </script>
 
     <div class="banner-home">
         <div class="banner-box"><a href="#"><img src="/img/cms/5_1.jpg" alt=""></a></div>
@@ -924,7 +413,7 @@
     <div class="container">
         <div class="block-smartblog">
             <div class="pos-title">
-                <h2><a href="smartblog.html"><span class="first-title">Our Blog</span><br><span class="last-title">New Posts</span></a>
+                <h2><a href="#"><span class="first-title">Our Blog</span><br><span class="last-title">New Posts</span></a>
                 </h2>
             </div>
             <div class="row pos-content">
@@ -936,14 +425,14 @@
                                 <div class="sds_blog_post">
                                     <div class="item-blog">
                                         <div class="news_module_image_holder">
-                                            <a href="smartblog/4_share-the-love-for-prestashop-1-6.html"><img
+                                            <a href="#"><img
                                                         alt="Share the Love for PrestaShop 1.6" class="feat_img_small"
                                                         src="../modules/smartblog/images/4.jpg"></a>
                                         </div>
                                         <div class="blog_content">
 
                                             <h4 class="sds_post_title"><a
-                                                        href="smartblog/4_share-the-love-for-prestashop-1-6.html">Share
+                                                        href="#">Share
                                                     the Love for PrestaShop 1.6</a></h4>
                                             <p>
                                                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -951,7 +440,7 @@
                                             </p>
 
                                             <span class="date-smart">2016-03-07 01:59:03</span>
-                                            <a href="smartblog/4_share-the-love-for-prestashop-1-6.html" class="r_more"><span>Read More</span></a>
+                                            <a href="#" class="r_more"><span>Read More</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -960,14 +449,14 @@
                                 <div class="sds_blog_post">
                                     <div class="item-blog">
                                         <div class="news_module_image_holder">
-                                            <a href="smartblog/3_answer-to-your-question-about-prestashop-1-6.html"><img
+                                            <a href="#"><img
                                                         alt="Answers to your Questions about PrestaShop 1.6"
                                                         class="feat_img_small" src="../modules/smartblog/images/3.jpg"></a>
                                         </div>
                                         <div class="blog_content">
 
                                             <h4 class="sds_post_title"><a
-                                                        href="smartblog/3_answer-to-your-question-about-prestashop-1-6.html">Answers
+                                                        href="#">Answers
                                                     to your Questions about...</a></h4>
                                             <p>
                                                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -975,7 +464,7 @@
                                             </p>
 
                                             <span class="date-smart">2016-03-07 01:59:03</span>
-                                            <a href="smartblog/3_answer-to-your-question-about-prestashop-1-6.html"
+                                            <a href="#"
                                                class="r_more"><span>Read More</span></a>
                                         </div>
                                     </div>
@@ -984,14 +473,14 @@
                             <div class="owl-item" style="width: 400px;">
                                 <div class="sds_blog_post">
                                     <div class="item-blog">
-                                        <div class="news_module_image_holder">
-                                            <a href="smartblog/2_what-is-bootstrap.html"><img
+                                            <div class="news_module_image_holder">
+                                            <a href="#"><img
                                                         alt="What is Bootstrap? – The History and the Hype"
                                                         class="feat_img_small" src="../modules/smartblog/images/2.jpg"></a>
                                         </div>
                                         <div class="blog_content">
 
-                                            <h4 class="sds_post_title"><a href="smartblog/2_what-is-bootstrap.html">What
+                                            <h4 class="sds_post_title"><a href="#">What
                                                     is Bootstrap? – The History...</a></h4>
                                             <p>
                                                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -999,7 +488,7 @@
                                             </p>
 
                                             <span class="date-smart">2016-03-07 01:59:03</span>
-                                            <a href="smartblog/2_what-is-bootstrap.html"
+                                            <a href="#"
                                                class="r_more"><span>Read More</span></a>
                                         </div>
                                     </div>
@@ -1009,14 +498,14 @@
                                 <div class="sds_blog_post">
                                     <div class="item-blog">
                                         <div class="news_module_image_holder">
-                                            <a href="smartblog/1_from-now-we-are-certified-web-agency.html"><img
+                                            <a href="#"><img
                                                         alt="From Now we are certified web agency"
                                                         class="feat_img_small" src="../modules/smartblog/images/1.jpg"></a>
                                         </div>
                                         <div class="blog_content">
 
                                             <h4 class="sds_post_title"><a
-                                                        href="smartblog/1_from-now-we-are-certified-web-agency.html">From
+                                                        href="#">From
                                                     Now we are certified web...</a></h4>
                                             <p>
                                                 Smartdatasoft is an offshore web development company located in
@@ -1024,48 +513,22 @@
                                             </p>
 
                                             <span class="date-smart">2016-03-07 01:59:03</span>
-                                            <a href="smartblog/1_from-now-we-are-certified-web-agency.html"
+                                            <a href="#"
                                                class="r_more"><span>Read More</span></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="clearfix"></div>
                         </div>
                     </div>
 
 
                 </div>
-                <div class="boxprevnext">
-                    <a class="prev prevblog"><i class="icon-long-arrow-left"></i></a>
-                    <a class="next nextblog"><i class="icon-long-arrow-right"></i></a>
-                </div>
+
             </div>
         </div>
     </div>
-    <script>
 
-        $(document).ready(function () {
-
-            var owl = $(".sdsblog-box-content");
-
-            owl.owlCarousel({
-                autoPlay: false,
-                pagination: false,
-                items: 3,
-                slideSpeed: 1000,
-                itemsDesktop: [1199, 3],
-                itemsDesktopSmall: [991, 2],
-                itemsTablet: [767, 2],
-                itemsMobile: [480, 1]
-            });
-            // Custom Navigation Events
-            $(".nextblog").click(function () {
-                owl.trigger('owl.next');
-            })
-            $(".prevblog").click(function () {
-                owl.trigger('owl.prev');
-            })
-        });
-    </script>
 
 @endsection

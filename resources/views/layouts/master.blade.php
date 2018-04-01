@@ -12,11 +12,13 @@
     <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico?1459389507">
 
     <script> window.Laravel = {
-            'csrfToken': "{{csrf_token()}}"
+            'csrfToken': "{{csrf_token()}}",
+            'url':"{{url()->to("/products")}}"
         }</script>
 
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/themes/pos_fobe1/css/global.css" type="text/css" media="all">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <link rel="stylesheet" href="/themes/pos_fobe1/css/global.css" type="text/css" media="all">
     <link rel="stylesheet" href="/themes/pos_fobe1/css/autoload/highdpi.css" type="text/css" media="all">
     <link rel="stylesheet" href="/themes/pos_fobe1/css/autoload/responsive-tables.css" type="text/css" media="all">
     <link rel="stylesheet" href="/themes/pos_fobe1/css/autoload/uniform.default.css" type="text/css" media="all">
@@ -95,12 +97,15 @@
         h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, a {
             font-family: Source Sans Pro;
         }
+
         .titleFont {
             font-family: Source Sans Pro !important;
         }
+
         body, .footer-container #footer a, .footer-container #footer ul li {
             font-family: Cabin;
         }
+
         .linkFont {
             font-family: Cabin !important;
         }
@@ -120,25 +125,24 @@
 </head>
 <body>
 
-<div id="page">
-  <div class="header-container">
-      @include("layouts.header")
+    <div id="page">
+        <div class="header-container">
+            @include("layouts.header")
 
-      @yield("content")
-  </div>
+            @yield("content")
+        </div>
 
-    <div class="column-container">
-        @yield("extra")
+        <div class="column-container">
+            @yield("extra")
+        </div>
+
+        <div class="footer-container">
+            @include("layouts.footer")
+        </div>
+        <script src="{{asset("js/app.js")}}"></script>
+        <script src="{{asset("js/cart.js")}}"></script>
+        @yield("script")
+
     </div>
-
-  <div class="footer-container">
-      @include("layouts.footer")
-  </div>
-   <script src="{{asset("js/app.js")}}"></script>
-   <script src="{{asset("js/cart.js")}}"></script>
-
-   @yield("script")
-
-</div>
 </body>
 </html>

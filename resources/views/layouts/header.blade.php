@@ -39,9 +39,21 @@
                         });
 
                     </script><!-- MODULE Block cart -->
-                   <div id="app1">
-                       <header-cart ref="cart"></header-cart>
-                   </div>
+                    <div class="block-cart">
+                        <div class="shopping_cart" style="position: relative">
+                            <a title="View my shopping cart" rel="nofollow" onclick="toggleHide()">
+                                <b>shopping cart</b>
+                                <span class="quantity-first"><span
+                                            class="ajax_cart_quantity unvisible" id="totalItemsInCart"></span></span>
+                            </a>
+
+                            <div class="cart_overlay">
+                             <div id="mainCart"></div>
+                                <a href="/checkout" id="checkout_button" class="btn" >Checkout <i class="fa fa-caret-right"></i><i class="fa fa-caret-right"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
 
                     <div id="layer_cart">
                         <div class="clearfix">

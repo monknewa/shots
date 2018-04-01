@@ -1,4 +1,3 @@
-
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -7,7 +6,7 @@
 
 require('./bootstrap');
 
-window.Vue = require('vue');
+
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -15,19 +14,9 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('products', require('./components/products/Products'));
-Vue.component('categories', require('./components/products/Category'));
-Vue.component('slider', require('./components/products/slider'));
-Vue.component('header-cart', require('./components/products/headerCart'));
 
-const app1 = new Vue({
-    el: '#app1',
-    components:{
-        'header-cart': require('./components/products/headerCart')
-    }
-});
-
-const app = new Vue({
-    el: '#app'
-});
+// const app = new Vue({
+//     el: '#app',
+//
+// });
 

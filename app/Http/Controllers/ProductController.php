@@ -142,16 +142,4 @@ class ProductController extends Controller
         return redirect("/dash/products");
     }
 
-    public function ajaxProducts()
-    {
-        $products = Product::latest()->paginate(6);
-        return response()->json($products);
-    }
-
-    public function ajaxProductCategory($category)
-    {
-        $category = Category::where("type",$category)->firstOrFail();
-        $products = Product::where("category_id",$category->id)->latest()->paginate(6);
-        return response()->json($products);
-    }
 }

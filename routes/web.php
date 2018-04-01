@@ -18,10 +18,7 @@ Route::put('/user/{user}', "UserController@profileedit")->name("profileedit");
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-
 Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get("/logout", 'Auth\LoginController@logout');
 
@@ -36,7 +33,6 @@ Route::group(['prefix' => '/dash', 'middleware' => ['auth', 'admin']], function 
         Route::put("/{product}", "ProductController@update");
         Route::delete("/{product}", "ProductController@destroy");
     });
-
     /** User edit forom dash */
     Route::group(['prefix' => '/users'], function () {
         Route::get("/", "UserController@dashIndex");
@@ -58,14 +54,18 @@ Route::put("/profile/user/{user}", "UserController@update");
 
 
 Route::get("/products/", "PagesController@products");
-Route::get("/products/{product}", "PagesController@products");
+Route::get("/products/{product}", "PagesController@productsWithCategory");
 
-Route::get("/checkout","PagesController@checkOut");
 
-Route::group(['prefix'=>'/ajax'], function(){
-    Route::post("/products","ProductController@ajaxProducts");
-    Route::post("/category","CategoryController@ajaxCategory");
-    Route::post("/products/{category}","ProductController@ajaxProductCategory");
+Route::get("/product/{product}","PagesController@product");
+Route::get("/checkout","PagesController@checkOut")->middleware("auth");
+Route::get("/checkout/address","PagesController@checkOutAddress")->middleware("auth");
 
+Route::post("/checkout","PagesController@purchase");
+
+Route::get("/test",function (){
+    return view("test");
 });
+
+
 
