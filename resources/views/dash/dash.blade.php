@@ -51,7 +51,6 @@
     </section>
     <hr>
 
-
     <section>
         <h2 class="display-4" style="margin-bottom: 20px;">Orders</h2>
 
@@ -63,27 +62,34 @@
                     <tr>
                         <th>Date</th>
                         <th>Order id</th>
-                        <th>Product Name</th>
-                        <th>User Name</th>
-                        <th>Quantity</th>
+                        <th>User ID</th>
                         <th>Address</th>
                         <th>Total</th>
-
+                        <th>Status</th>
                     </tr>
                     </thead>
 
                     <tbody>
                     @foreach($orderDetails as $order )
                         <tr>
-
                             <td>{{$order->created_at}}</td>
                             <td>{{$order->id}}</td>
-                            <td>{{$order->product_name}}</td>
                             <td>{{$order->user_name}}</td>
-                            <td>{{$order->quantity}}</td>
                             <td>{{$order->address}}</td>
                             <td>{{$order->total}}</td>
-
+                            <td>
+                                <select name="" id="status" onchange="changeStatus({{$order->id}})">
+                                    <option value="pending" {{ ($order->status == 'pending' )?'selected':'' }} >
+                                        Pending
+                                    </option>
+                                    <option value="approved" {{ ($order->status == 'approved' )?'selected':'' }} >
+                                        Approved
+                                    </option>
+                                    <option value="canceled" {{ ($order->status == 'canceled' )?'selected':'' }} >
+                                        Canceled
+                                    </option>
+                                </select>
+                            </td>
                         </tr>
                     @endforeach
                     </tbody>
@@ -97,8 +103,23 @@
 @endsection
 
 @section('scripts')
-
     <script>
         $("#orders").DataTable({info: false});
+
+        function changeStatus(orderid) {
+            var val = document.querySelector("#status").value;
+
+            console.log(val);
+            console.log(orderid);
+            $.post("/dash/order/status",
+                {
+                    orderid: orderid,
+                    status: val
+                }, function (success) {
+                   alert("Status changed to " + success);
+                });
+
+        }
+
     </script>
 @endsection

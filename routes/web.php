@@ -40,13 +40,24 @@ Route::group(['prefix' => '/dash', 'middleware' => ['auth', 'admin']], function 
     });
 
     Route::group(['prefix' => '/category'], function () {
-        Route::get("/","CategoryController@index");
-        Route::get("/{category}/edit","CategoryController@edit");
-        Route::put("/{category}/edit","CategoryController@update");
+        Route::get("/", "CategoryController@index");
+        Route::get("/{category}/edit", "CategoryController@edit");
+        Route::put("/{category}/edit", "CategoryController@update");
     });
 
     Route::get("/account", "DashController@account");
     Route::put("/account", "DashController@accountEdit");
+
+    Route::get("/order", "DashController@order");
+
+    Route::post("/order/status", function () {
+
+        $order = \App\Order::find(request("orderid"));
+        $order->status = request("status");
+        $order->update();
+        return $order->status;
+    });
+
 });
 
 Route::get("/profile/user", "UserController@index");
@@ -57,11 +68,11 @@ Route::get("/products/", "PagesController@products");
 Route::get("/products/{product}", "PagesController@productsWithCategory");
 
 
-Route::get("/product/{product}","PagesController@product");
-Route::get("/checkout","PagesController@checkOut")->middleware("auth");
-Route::get("/checkout/address","PagesController@checkOutAddress")->middleware("auth");
+Route::get("/product/{product}", "PagesController@product");
+Route::get("/checkout", "PagesController@checkOut")->middleware("auth");
+Route::get("/checkout/address", "PagesController@checkOutAddress")->middleware("auth");
 
-Route::post("/checkout","PagesController@purchase");
+Route::post("/checkout", "PagesController@purchase");
 
 
 

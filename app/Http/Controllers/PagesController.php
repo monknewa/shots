@@ -14,7 +14,9 @@ class PagesController extends Controller
     {
         $products = Product::latest()->limit(10)->get();
         $specialCollections = Product::where("price", ">", 4000)->limit(10)->latest()->get();
-        return view("welcome", compact('products', 'specialCollections'));
+        $beer = Product::where("category_id", Category::where("type", "beer")->first()->id)->first();
+
+        return view("welcome", compact('products', 'specialCollections','beer'));
     }
 
     public function products()

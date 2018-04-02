@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row">
                 <div class="pos_logo col-md-2 col-sm-12 col-xs-12">
-                    <a href="http://demo.posthemes.com/pos_fobe/" title="Pos_fobe Responsive Prestashop Theme">
+                    <a href="/" title="Pos_fobe Responsive Prestashop Theme">
                         <img class="logo img-responsive" src="/img/logo.png" alt="Pos_fobe Responsive Prestashop Theme"
                              width="141" height="55">
                         {{--<img src="/img/logo.png" alt="">--}}

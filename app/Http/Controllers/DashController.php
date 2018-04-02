@@ -22,12 +22,13 @@ class DashController extends Controller
         $products = Product::all();
 
         $orderDetails = DB::table("orders")
+            ->selectRaw("orders.created_at , orders.id , 
+            products.name as product_name , users.name as user_name ,  
+            orders.delivery_address as address , orders.total, orders.status")
+
             ->join("orders_products", "orders.id", "=", "orders_products.order_id")
             ->join("products", "products.id", "=", "orders_products.product_id")
             ->join("users", "orders.user_id", "=", "users.id")
-            ->selectRaw("orders.created_at , orders.id , 
-            products.name as product_name , users.name as user_name ,  orders_products.quantity , 
-            orders.delivery_address as address , orders_products.total")
             ->orderBy("orders.created_at", "desc")->get();
 
         return view("dash.dash", [
@@ -36,13 +37,27 @@ class DashController extends Controller
             'products' => $products->count(),
             'stock' => $products->sum("quantity"),
             'sales' => $orders->sum("total"),
-            'orderDetails'=>$orderDetails
+            'orderDetails' => $orderDetails
         ]);
     }
 
     public function account()
     {
         return view("dash.account");
+    }
+
+    public function order()
+    {
+        $orderDetails = DB::table("orders")
+            ->join("orders_products", "orders.id", "=", "orders_products.order_id")
+            ->join("products", "products.id", "=", "orders_products.product_id")
+            ->join("users", "orders.user_id", "=", "users.id")
+            ->selectRaw("orders.created_at , orders.id , 
+            products.name as product_name , users.name as user_name ,  orders_products.quantity , 
+            orders.delivery_address as address , orders_products.total")
+            ->orderBy("orders.created_at", "desc")->get();
+
+        return view("dash.order", compact('orderDetails'));
     }
 
     public function products()

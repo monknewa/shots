@@ -22,9 +22,5 @@ class DatabaseSeeder extends Seeder
             'password'=>bcrypt("secret"),
             'isAdmin'=>true
         ]);
-
-        factory("App\User",5)->create();
-        factory("App\Product",100)->create();
-
     }
 }

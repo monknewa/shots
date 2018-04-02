@@ -18,7 +18,8 @@
             <div class="container">
                 <div class="row">
                     <div class=" col-md-8 col-sm-8 col-xs-12">
-                        <div class="banner-box"><a href="#" data-lightbox="image-1"><img src="/img/cms/1_1.jpg" alt=""></a></div>
+                        <div class="banner-box"><a href="#" data-lightbox="image-1"><img src="/img/cms/1_1.jpg" alt=""></a>
+                        </div>
                     </div>
                     <div class=" col-md-4 col-sm-4 col-xs-12">
                         <div class="banner-box"><a href="#"><img src="/img/cms/2_1.jpg" alt=""></a></div>
@@ -53,40 +54,26 @@
                                                         <img src="../40-home_default/printed-summer-dress.jpg"
                                                              class="img-responsive" alt="">
                                                     </a>
-
                                                 </div>
                                                 <div class="product-contents">
 
                                                     <h5 class="product-name">
-                                                        <a href="#" title="">
-                                                            Printed Summer Dress<br>
+                                                        <a href="/product/{{$beer['name']}}" title="">
+                                                           {{$beer['name']}}<br>
                                                         </a>
                                                     </h5>
 
-                                                    <div class="price-box">
-                                                        <span class="price product-price">£ 34.78</span>
+                                                    <div class="price-box" style="margin-bottom: 10px">
+                                                        <span class="price product-price"><i class="fa fa-rupee"></i> {{$beer['price']}}</span>
                                                         <span class="price-percent-reduction">-5%</span>
                                                     </div>
-                                                    <div class="hook-reviews">
-                                                        <div itemtype="http://schema.org/AggregateRating" itemscope=""
-                                                             itemprop="aggregateRating" class="comments_note">
-                                                            <div class="star_content clearfix">
-                                                                <div class="star "></div>
-                                                                <div class="star "></div>
-                                                                <div class="star "></div>
-                                                                <div class="star"></div>
-                                                                <div class="star "></div>
-                                                            </div>
-                                                        </div>
 
-                                                    </div>
-                                                    <p class="product-desc" itemprop="description">
-                                                        Long printed dress with thin adjustable straps. V-neckline and
-                                                        wiring under the bust with ruffles at the...
+                                                    <p class="product-desc" itemprop="description" style="overflow: auto;height: 200px;">
+                                                        {{$beer['description']}}
                                                     </p>
                                                     <div class="cart">
                                                         <a class="button ajax_add_to_cart_button btn btn-default"
-                                                           href="/products/"
+                                                           onclick="addToCart({{$beer}})"
                                                            rel="nofollow" title="Add to cart" data-id-product="5">
                                                             <span>Add to cart</span>
 
@@ -107,7 +94,6 @@
                                                        class="content_img clearfix">
                                                         <img src="../65-home_default/printed-summer-dress.jpg"
                                                              class="img-responsive" alt="">
-
                                                     </a>
 
                                                 </div>
@@ -136,15 +122,7 @@
 
                                                     </div>
                                                     <div class="hook-reviews">
-                                                        <div itemtype="http://schema.org/AggregateRating" itemscope=""
-                                                             itemprop="aggregateRating" class="comments_note">
-                                                            <div class="star_content clearfix">
-                                                                <div class=" "></div>
-                                                                <div class=" "></div>
-                                                                <div class=" "></div>
-                                                                <div class=""></div>
-                                                                <div class=" "></div>
-                                                            </div>
+                                                        <div itemprop="aggregateRating" class="comments_note">
                                                         </div>
 
                                                     </div>
@@ -290,14 +268,13 @@
 
                                                     <div class="products-inner">
                                                         <a class="product_img_link"
-
+                                                           href="/product/{{$specialCollection->name}}"
                                                            title="Faded Short Sleeves T-shirt" itemprop="url">
                                                             <img class=" img-responsive"
                                                                  src="{{$specialCollection->image}}"
                                                                  style="height:300px"
                                                                  title="{{$specialCollection->name}}" itemprop="image">
                                                         </a>
-
                                                     </div>
                                                     <div class="product-contents">
                                                         <h5 class="product-name"><a
@@ -396,7 +373,7 @@
                             @empty
                                 sorry no item
                             @endforelse
-                                <div class="clearfix"></div>
+                            <div class="clearfix"></div>
                         </div>
                     </div>
                 </div>
@@ -413,7 +390,8 @@
     <div class="container">
         <div class="block-smartblog">
             <div class="pos-title">
-                <h2><a href="#"><span class="first-title">Our Blog</span><br><span class="last-title">New Posts</span></a>
+                <h2><a href="#"><span class="first-title">Our Blog</span><br><span
+                                class="last-title">New Posts</span></a>
                 </h2>
             </div>
             <div class="row pos-content">
@@ -473,7 +451,7 @@
                             <div class="owl-item" style="width: 400px;">
                                 <div class="sds_blog_post">
                                     <div class="item-blog">
-                                            <div class="news_module_image_holder">
+                                        <div class="news_module_image_holder">
                                             <a href="#"><img
                                                         alt="What is Bootstrap? – The History and the Hype"
                                                         class="feat_img_small" src="../modules/smartblog/images/2.jpg"></a>

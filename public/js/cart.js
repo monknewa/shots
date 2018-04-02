@@ -101,7 +101,7 @@ function fetchCart() {
     } else {
         document.getElementById("checkout_button").style.display = "block";
 
-        string = "<table id='cartTable'>" +
+        string = "<table id='cartTable' class='table'>" +
             "<thead>" +
             "<tr>" +
             "<th>Name</th>" +
@@ -198,7 +198,9 @@ function checkOutRows() {
         }
     }
     tbody.innerHTML = string;
-    tfoot.innerHTML = '<i class="fa fa-rupee"></i>' + allTotal;
+    allTotal = allTotal + (13 / 100) * allTotal;
+
+    tfoot.innerHTML = '<i class="fa fa-rupee"></i>' + allTotal.toFixed(2);
     /*   */
 }
 
@@ -239,7 +241,7 @@ function addAddress() {
     /** for delivery address valdation and purchasing the items */
     var location1 = escapeHtml(document.querySelector("#checkout_address").value);
 
-    if(!(location1 === '' || location1 === null || location1 === undefined)){
+    if (!(location1 === '' || location1 === null || location1 === undefined)) {
         if (confirm("Are you sure you want to make this purchase")) {
             $.ajax({
                 type: "POST",
@@ -247,6 +249,7 @@ function addAddress() {
                 data: {location: location1, products: JSON.parse(localStorage.getItem('cart'))},
                 success: function (res) {
                     localStorage.clear();
+                    alert("Order has been processed")
                     window.location.href = Laravel.url;
                 },
                 headers: {
@@ -254,7 +257,7 @@ function addAddress() {
                 }
             });
         }
-    }else{
+    } else {
         alert("Please add a delivery address");
     }
 }

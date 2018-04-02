@@ -7,7 +7,7 @@
 
             <!-- Breadcrumb -->
             <div class="breadcrumb clearfix">
-                <a class="home" href="http://demo.posthemes.com/pos_fobe/" title="Return to Home"><i
+                <a class="home" href="/" title="Return to Home"><i
                             class="icon-home"></i></a>
                 <span class="navigation-pipe">&gt;</span>
 

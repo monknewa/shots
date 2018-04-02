@@ -18,6 +18,8 @@ class CreateOrdersTable extends Migration
             $table->integer("user_id")->unsigned();
             $table->text("delivery_address");
             $table->double("total")->default(0);
+
+            $table->string("status")->default("pending");
             $table->foreign("user_id")
                 ->references("id")
                 ->on("users");

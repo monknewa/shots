@@ -21,12 +21,6 @@
         </div>
         <div class="row">
             <div id="center_column" class="center_column col-xs-12 col-sm-12">
-
-                <h1 id="cart_title" class="page-heading">Shopping-cart summary
-                    <span class="heading-counter">Your shopping cart contains:
-			<span id="summary_products_quantity">8 products</span>
-		</span>
-                </h1>
                 <!-- Steps -->
                 <ul class="step clearfix" id="order_step">
                     <li class="step_current  first">
@@ -55,10 +49,10 @@
                         <tfoot>
 
                         <tr class="cart_total_price">
-                            <td rowspan="3" colspan="2" id="cart_voucher" class="cart_voucher">
+                            <td rowspan="2" colspan="2" id="cart_voucher" class="cart_voucher">
                             </td>
                             <td colspan="3" class="text-right">Total products (tax incl.)</td>
-                            <td colspan="2" class="price" id="total_product"></td>
+                            <td colspan="2" class="price" id="total_product">13% tax</td>
                         </tr>
 
                         <tr class="cart_total_price">
@@ -74,7 +68,6 @@
                         </tr>
 
                         </tfoot>
-
 
                     </table>
                 </div> <!-- end order-detail-content -->

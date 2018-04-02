@@ -45,6 +45,7 @@ class Order extends Model
             $item = Product::find($product['id']);
             $total = $item->price * $product['times'];
 
+
             $item->update([
                 'quantity' => $item->quantity - $product['times']
             ]);
@@ -57,6 +58,8 @@ class Order extends Model
             ]);
             $finalTotal += $total;
         }
+        $finalTotal = $finalTotal + (13/100)*$finalTotal;
+
         $order->total = $finalTotal;
         $order->update();
 

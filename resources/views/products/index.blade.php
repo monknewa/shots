@@ -42,7 +42,7 @@
                                 </div>
                                 <div class="layered_filter" style="">
                                     <div class="layered_subtitle_heading">
-                                        <h3 class="layered_subtitle">Price</h3>
+
                                     </div>
 
                                 </div>

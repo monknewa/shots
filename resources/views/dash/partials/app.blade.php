@@ -64,7 +64,6 @@
 <!-- Javascript files-->
 @include('dash.partials.footer')
 
-
 <script>
     $.ajaxSetup({
             headers: {
